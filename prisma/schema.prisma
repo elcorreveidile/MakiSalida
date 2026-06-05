@@ -100,10 +100,44 @@ model CourseProgress {
   @@map("course_progress")
 }
 
+model Professional {
+  id          String             @id @default(cuid())
+  name        String
+  email       String
+  phone       String?
+  category    ProfessionalCategory
+  specialty   String?
+  description String             @db.Text
+  city        String
+  province    String?
+  website     String?
+  status      ProfessionalStatus @default(PENDING)
+  createdAt   DateTime           @default(now())
+  updatedAt   DateTime           @updatedAt
+
+  @@map("professionals")
+}
+
 enum Role {
   USER
   ADMIN
   SUPERADMIN
+}
+
+enum ProfessionalCategory {
+  ABOGADO
+  TRABAJADOR_SOCIAL
+  PSICOLOGO
+  EMPLEADOR
+  EDUCADOR
+  ONG
+  OTRO
+}
+
+enum ProfessionalStatus {
+  PENDING
+  APPROVED
+  REJECTED
 }
 
 enum CommunicationType {

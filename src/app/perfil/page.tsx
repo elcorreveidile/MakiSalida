@@ -3,12 +3,26 @@ import Link from 'next/link';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { createClient } from '@/utils/supabase/server';
+import { prisma } from '@/lib/db/prisma';
+
+const SUPERADMIN_EMAILS = ['javier@blablaele.com'];
 
 export default async function ProfilePage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
   if (!user) redirect('/login');
+
+  let dbUser = await prisma.user.findUnique({ where: { email: user.email! } });
+
+  if (!dbUser) {
+    const role = SUPERADMIN_EMAILS.includes(user.email!) ? 'SUPERADMIN' : 'USER';
+    dbUser = await prisma.user.create({
+      data: { email: user.email!, authId: user.id, role },
+    });
+  }
+
+  const isAdmin = dbUser.role === 'ADMIN' || dbUser.role === 'SUPERADMIN';
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex flex-col">
@@ -31,10 +45,26 @@ export default async function ProfilePage() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900">{user.email?.split('@')[0]}</h2>
               <p className="text-gray-600">{user.email}</p>
+              {isAdmin && (
+                <span className={`inline-block mt-1 px-2 py-0.5 rounded text-xs font-semibold ${
+                  dbUser.role === 'SUPERADMIN' ? 'bg-purple-100 text-purple-800' : 'bg-amber-100 text-amber-800'
+                }`}>
+                  {dbUser.role}
+                </span>
+              )}
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
+            {isAdmin && (
+              <Link
+                href="/admin"
+                className="p-6 border-2 border-amber-400 bg-amber-50 rounded-xl hover:border-amber-600 transition-colors"
+              >
+                <h3 className="text-lg font-bold text-gray-900 mb-2">Panel de Administración</h3>
+                <p className="text-gray-600 text-sm">Gestiona usuarios, mensajes y profesionales</p>
+              </Link>
+            )}
             <Link
               href="/familias"
               className="p-6 border-2 border-gray-200 rounded-xl hover:border-amber-500 transition-colors"
