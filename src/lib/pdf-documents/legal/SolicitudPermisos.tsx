@@ -22,7 +22,7 @@ const FormHeader = () => (
         alignItems: 'center',
         marginRight: 12
       }}>
-        <Text style={{ fontSize: 24, color: colors.white }}>🚪</Text>
+        <Text style={{ fontSize: 16, fontWeight: 'bold', color: colors.white }}>MS</Text>
       </View>
       <View>
         <Text style={{ fontSize: 20, fontWeight: 'bold', color: colors.primary }}>

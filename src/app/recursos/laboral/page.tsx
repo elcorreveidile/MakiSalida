@@ -61,9 +61,12 @@ export default function LaboralPage() {
                 <li>✓ Portales de empleo especiales</li>
                 <li>✓ Redes de contacto y networking</li>
               </ul>
-              <button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
-                Descargar guía (PDF)
-              </button>
+              <Link
+                href="/recursos/laboral#consejos"
+                className="block text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors"
+              >
+                Ver consejos prácticos
+              </Link>
             </article>
 
             <article className="bg-white rounded-lg shadow-md p-8">
@@ -87,9 +90,12 @@ export default function LaboralPage() {
                 <li>• Qué detalles incluir y cuáles omitir</li>
                 <li>• Cómo destacar tu rehabilitación y formación</li>
               </ul>
-              <button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
-                Ver ejemplos y consejos
-              </button>
+              <Link
+                href="#como-explicar"
+                className="block text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors"
+              >
+                Ver sección completa
+              </Link>
             </article>
 
             <article className="bg-white rounded-lg shadow-md p-8">
@@ -118,9 +124,14 @@ export default function LaboralPage() {
                   o actividad por cuenta propia
                 </li>
               </ul>
-              <button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
-                Ver programas disponibles
-              </button>
+              <Link
+                href="https://www.sepe.es"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors"
+              >
+                Ver programas SEPE
+              </Link>
             </article>
 
             <article className="bg-white rounded-lg shadow-md p-8">
@@ -144,9 +155,12 @@ export default function LaboralPage() {
                 <li>• Cooperativas sociales</li>
                 <li>• Programas de empresas colaboradoras</li>
               </ul>
-              <button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
-                Buscar empresas por sector
-              </button>
+              <Link
+                href="#empresas"
+                className="block text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors"
+              >
+                Ver lista de empresas
+              </Link>
             </article>
 
             <article className="bg-white rounded-lg shadow-md p-8">
@@ -159,25 +173,45 @@ export default function LaboralPage() {
               </p>
               <ul className="text-gray-700 space-y-2">
                 <li>
-                  <a href="#" className="text-amber-600 hover:text-amber-700 font-semibold">
+                  <a
+                    href="https://www.sepe.es/es/portal-empleo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-600 hover:text-amber-700 font-semibold"
+                  >
                     SEPE - Portal de empleo
                   </a>
                   {' '}– Ofertas de trabajo y recursos
                 </li>
                 <li>
-                  <a href="#" className="text-amber-600 hover:text-amber-700 font-semibold">
+                  <a
+                    href="https://www.sepe.es/es/empleo/formacion"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-600 hover:text-amber-700 font-semibold"
+                  >
                     Programas de empleo
                   </a>
                   {' '}– Iniciativas de inserción laboral
                 </li>
                 <li>
-                  <a href="#" className="text-amber-600 hover:text-amber-700 font-semibold">
+                  <a
+                    href="https://www.redtrabaja.gob.es/es/trabajadores/servicios-de-empleo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-600 hover:text-amber-700 font-semibold"
+                  >
                     Servicios autonómicos
                   </a>
                   {' '}– Recursos por comunidad autónoma
                 </li>
                 <li>
-                  <a href="#" className="text-amber-600 hover:text-amber-700 font-semibold">
+                  <a
+                    href="https://www.redtrabaja.gob.es/es/orientacion-laboral"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-600 hover:text-amber-700 font-semibold"
+                  >
                     Orientación laboral
                   </a>
                   {' '}– Servicios gratuitos de asesoramiento
