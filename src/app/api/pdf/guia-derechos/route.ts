@@ -14,7 +14,7 @@ export async function GET() {
     headers.set('Cache-Control', 'public, max-age=31536000'); // Cache por 1 año
 
     // Retornar el PDF
-    return new NextResponse(pdfBuffer, {
+    return new NextResponse(new Uint8Array(pdfBuffer), {
       status: 200,
       headers,
     });

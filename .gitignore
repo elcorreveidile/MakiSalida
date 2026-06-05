@@ -69,3 +69,5 @@ public/uploads/
 # Temporary files
 tmp/
 temp/
+
+/src/generated/prisma

@@ -52,7 +52,7 @@ export const createStyles = () => ({
     backgroundColor: '#fef3c7',
     padding: '4pt 8pt',
     borderRadius: 3,
-    alignSelf: 'flex-start',
+    alignSelf: 'flex-start' as const,
     marginTop: 8,
   },
 
@@ -88,7 +88,7 @@ export const createStyles = () => ({
     lineHeight: 1.6,
     color: '#1f2937',
     marginBottom: 6,
-    textAlign: 'justify',
+    textAlign: 'justify' as const,
   },
 
   textSmall: {
@@ -211,7 +211,7 @@ export const createStyles = () => ({
     borderRadius: 6,
     fontSize: 10,
     fontWeight: 'bold',
-    textAlign: 'center',
+    textAlign: 'center' as const,
     marginBottom: 10,
   },
 
@@ -222,18 +222,18 @@ export const createStyles = () => ({
     borderRadius: 6,
     fontSize: 10,
     fontWeight: 'bold',
-    textAlign: 'center',
+    textAlign: 'center' as const,
     marginBottom: 10,
     border: '1pt solid #d97706',
   },
 
   // Footer
   footer: {
-    position: 'absolute',
+    position: 'absolute' as const,
     bottom: 30,
     left: 40,
     right: 40,
-    textAlign: 'center',
+    textAlign: 'center' as const,
     fontSize: 8,
     color: '#6b7280',
     borderTop: '1pt solid #e5e7eb',
@@ -246,7 +246,7 @@ export const createStyles = () => ({
 
   // Page number
   pageNumber: {
-    position: 'absolute',
+    position: 'absolute' as const,
     bottom: 30,
     right: 40,
     fontSize: 9,

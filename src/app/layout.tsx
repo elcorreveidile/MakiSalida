@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
+import { SessionProvider } from '@/components/auth/SessionProvider';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -7,10 +8,26 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'MakiSalida - Apoyo a Internos y Familias',
   description: 'Plataforma integral para apoyo a internos penitenciarios y sus familias. Conexión, reinserción y nueva vida.',
-  keywords: ['reinserción', 'penitenciario', 'familias', 'apoyo', 'makinavaja'],
+  keywords: ['reinserción', 'penitenciario', 'familias', 'apoyo', 'derechos internos', 'recursos legales penitenciarios'],
   authors: [{ name: 'MakiSalida Team' }],
   creator: 'MakiSalida',
   publisher: 'MakiSalida',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://makisalida.com'),
+  openGraph: {
+    type: 'website',
+    locale: 'es_ES',
+    siteName: 'MakiSalida',
+    title: 'MakiSalida - Apoyo a Internos y Familias',
+    description: 'Plataforma integral para apoyo a internos penitenciarios y sus familias. Conexión, reinserción y nueva vida.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MakiSalida - Apoyo a Internos y Familias',
+    description: 'Plataforma integral para apoyo a internos penitenciarios y sus familias.',
+  },
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '32x32' },
@@ -38,22 +55,8 @@ export const metadata: Metadata = {
     google: 'google-site-verification-code',
     yandex: 'yandex-verification-code',
   },
-  // Security metadata
-  security: {
-    csp: [
-      {
-        'default-src': ["'self'"],
-        'script-src': ["'self'", "'unsafe-eval'", "'unsafe-inline'"],
-        'style-src': ["'self'", "'unsafe-inline'"],
-        'img-src': ["'self'", 'data:', 'https:'],
-        'font-src': ["'self'", 'data:'],
-        'object-src': ["'none'"],
-        'base-uri': ["'self'"],
-        'form-action': ["'self'"],
-        'frame-ancestors': ["'none'"],
-        'upgrade-insecure-requests': [],
-      },
-    ],
+  other: {
+    'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests",
   },
 };
 
@@ -84,16 +87,18 @@ export default function RootLayout({
         <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
       </head>
       <body className={inter.className}>
-        {/* Skip link for keyboard navigation */}
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-amber-500 focus:text-white focus:rounded-lg focus:font-semibold"
-        >
-          Saltar al contenido principal
-        </a>
-        <div id="main-content" tabIndex={-1}>
-          {children}
-        </div>
+        <SessionProvider>
+          {/* Skip link for keyboard navigation */}
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-amber-500 focus:text-white focus:rounded-lg focus:font-semibold"
+          >
+            Saltar al contenido principal
+          </a>
+          <div id="main-content" tabIndex={-1}>
+            {children}
+          </div>
+        </SessionProvider>
       </body>
     </html>
   );
