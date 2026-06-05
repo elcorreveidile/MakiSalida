@@ -27,7 +27,7 @@ export default function AvisoLegalPage() {
             Aviso Legal
           </h1>
           <p className="text-xl text-amber-100">
-            Última actualización: Enero 2025
+            Última actualización: Junio 2026
           </p>
         </div>
       </section>
@@ -164,7 +164,7 @@ export default function AvisoLegalPage() {
 
               <div className="mt-8 p-6 bg-gray-100 rounded-lg">
                 <p className="text-gray-700 text-sm">
-                  <strong>Fecha de entrada en vigor:</strong> Enero 2025
+                  <strong>Fecha de entrada en vigor:</strong> Junio 2026
                 </p>
                 <p className="text-gray-700 text-sm mt-2">
                   Este aviso legal puede ser modificado en cualquier momento. Los cambios

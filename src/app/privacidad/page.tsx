@@ -27,7 +27,7 @@ export default function PrivacidadPage() {
             Política de Privacidad
           </h1>
           <p className="text-xl text-amber-100">
-            Última actualización: Enero 2025
+            Última actualización: Junio 2026
           </p>
         </div>
       </section>

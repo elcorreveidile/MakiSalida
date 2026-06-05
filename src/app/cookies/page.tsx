@@ -27,7 +27,7 @@ export default function CookiesPage() {
             Política de Cookies
           </h1>
           <p className="text-xl text-amber-100">
-            Última actualización: Enero 2025
+            Última actualización: Junio 2026
           </p>
         </div>
       </section>
@@ -49,7 +49,7 @@ export default function CookiesPage() {
               <h3 className="text-xl font-semibold text-gray-800 mb-3">2.1. Cookies técnicas (necesarias)</h3>
               <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r mb-4">
                 <p className="text-gray-700 mb-2">
-                  <strong>Purpose:</strong> Son necesarias para el funcionamiento del sitio web
+                  <strong>Propósito:</strong> Son necesarias para el funcionamiento del sitio web
                 </p>
                 <p className="text-gray-700">
                   No requieren consentimiento y no pueden ser deshabilitadas.
