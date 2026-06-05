@@ -42,14 +42,15 @@ export async function POST(request: Request) {
       );
     }
 
-    const { auth } = await import('@/lib/auth/auth');
-    const session = await auth();
+    const { createClient } = await import('@/utils/supabase/server');
+    const supabase = await createClient();
+    const { data: { user } } = await supabase.auth.getUser();
 
     const { prisma } = await import('@/lib/db/prisma');
     await prisma.contactMessage.create({
       data: {
         ...result.data,
-        userId: session?.user?.id ?? null,
+        userId: user?.id ?? null,
       },
     });
 

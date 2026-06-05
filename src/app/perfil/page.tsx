@@ -1,14 +1,13 @@
-import { auth } from '@/lib/auth/auth';
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
 import { Footer } from '@/components/Footer';
-import { SignOutButton } from '@/components/auth/SignOutButton';
+import { createClient } from '@/utils/supabase/server';
 
 export default async function ProfilePage() {
-  const session = await auth();
-  if (!session?.user) redirect('/login');
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
 
-  const user = session.user;
+  if (!user) redirect('/login');
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex flex-col">
@@ -24,7 +23,6 @@ export default async function ProfilePage() {
             <nav className="hidden md:flex space-x-6 items-center">
               <Link href="/familias" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Familias</Link>
               <Link href="/recursos" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Recursos</Link>
-              <SignOutButton />
             </nav>
           </div>
         </div>
@@ -42,10 +40,10 @@ export default async function ProfilePage() {
         <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8">
           <div className="flex items-center gap-6 mb-8">
             <div className="w-20 h-20 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-white text-3xl font-bold">
-              {user.name?.charAt(0)?.toUpperCase() || 'U'}
+              {user.email?.charAt(0)?.toUpperCase() || 'U'}
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-gray-900">{user.name || 'Usuario'}</h2>
+              <h2 className="text-2xl font-bold text-gray-900">{user.email?.split('@')[0]}</h2>
               <p className="text-gray-600">{user.email}</p>
             </div>
           </div>

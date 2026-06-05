@@ -171,10 +171,10 @@ export default function HomePage() {
             Únete a MakiSalida y descubre el apoyo que necesitas para la reinserción.
           </p>
           <Link
-            href="/registro"
+            href="/login"
             className="inline-block px-10 py-4 bg-white text-amber-700 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all shadow-lg focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50"
           >
-            Crear Cuenta Gratuita
+            Acceder con tu Email
           </Link>
         </section>
       </main>
