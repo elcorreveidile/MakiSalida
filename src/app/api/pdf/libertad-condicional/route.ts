@@ -11,7 +11,7 @@ export async function GET() {
     headers.set('Content-Disposition', 'attachment; filename="libertad-condicional-makisalida.pdf"');
     headers.set('Cache-Control', 'public, max-age=31536000');
 
-    return new NextResponse(pdfBuffer, {
+    return new NextResponse(new Uint8Array(pdfBuffer), {
       status: 200,
       headers,
     });

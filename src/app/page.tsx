@@ -1,5 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { Footer } from '@/components/Footer';
+import { AuthNav } from '@/components/auth/AuthNav';
 
 export default function HomePage() {
   return (
@@ -17,17 +20,20 @@ export default function HomePage() {
                 <p className="text-base text-gray-600">Hacia la libertad, con apoyo</p>
               </div>
             </Link>
-            <nav className="hidden md:flex space-x-8" aria-label="Navegación principal">
-              <Link href="/familias" className="text-lg text-gray-700 hover:text-amber-600 font-medium transition-colors">
-                Familias
-              </Link>
-              <Link href="/reinsercion" className="text-lg text-gray-700 hover:text-amber-600 font-medium transition-colors">
-                Reinserción
-              </Link>
-              <Link href="/recursos" className="text-lg text-gray-700 hover:text-amber-600 font-medium transition-colors">
-                Recursos
-              </Link>
-            </nav>
+            <div className="hidden md:flex items-center gap-8">
+              <nav className="flex space-x-8" aria-label="Navegación principal">
+                <Link href="/familias" className="text-lg text-gray-700 hover:text-amber-600 font-medium transition-colors">
+                  Familias
+                </Link>
+                <Link href="/reinsercion" className="text-lg text-gray-700 hover:text-amber-600 font-medium transition-colors">
+                  Reinserción
+                </Link>
+                <Link href="/recursos" className="text-lg text-gray-700 hover:text-amber-600 font-medium transition-colors">
+                  Recursos
+                </Link>
+              </nav>
+              <AuthNav />
+            </div>
           </div>
         </div>
       </header>
@@ -164,9 +170,12 @@ export default function HomePage() {
           <p className="text-xl mb-6 text-amber-50 leading-relaxed">
             Únete a MakiSalida y descubre el apoyo que necesitas para la reinserción.
           </p>
-          <button className="px-10 py-4 bg-white text-amber-700 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all shadow-lg focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50">
+          <Link
+            href="/registro"
+            className="inline-block px-10 py-4 bg-white text-amber-700 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all shadow-lg focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50"
+          >
             Crear Cuenta Gratuita
-          </button>
+          </Link>
         </section>
       </main>
 
