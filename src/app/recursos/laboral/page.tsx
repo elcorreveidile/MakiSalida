@@ -259,6 +259,266 @@ export default function LaboralPage() {
         </div>
       </section>
 
+      {/* Consejos prácticos */}
+      <section id="consejos" className="py-16 px-4" aria-labelledby="consejos-title">
+        <div className="max-w-4xl mx-auto">
+          <h2 id="consejos-title" className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Consejos prácticos para la búsqueda de empleo
+          </h2>
+
+          <div className="space-y-6">
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">1. Prepara un buen CV</h3>
+              <ul className="text-gray-700 space-y-3">
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 mt-1 font-bold">→</span>
+                  <span><strong>Destaca tu formación reciente:</strong> cursos, talleres y certificados obtenidos durante o después del internamiento demuestran tu compromiso con el cambio.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 mt-1 font-bold">→</span>
+                  <span><strong>Incluye experiencia laboral interna:</strong> si trabajaste en talleres, cocina, mantenimiento o cualquier actividad dentro del centro, inclúyelo como experiencia válida.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 mt-1 font-bold">→</span>
+                  <span><strong>Usa un formato funcional:</strong> en lugar de cronológico, organiza por habilidades y competencias para evitar que los huecos temporales sean lo primero que se vea.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 mt-1 font-bold">→</span>
+                  <span><strong>Carta de presentación personalizada:</strong> adapta cada carta a la empresa. Explica brevemente tu motivación y por qué eres la persona adecuada.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">2. Dónde buscar empleo</h3>
+              <ul className="text-gray-700 space-y-3">
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 mt-1 font-bold">→</span>
+                  <span><strong>Servicios Públicos de Empleo (SEPE):</strong> inscríbete como demandante de empleo. Tendrás acceso a ofertas, formación y orientación gratuita.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 mt-1 font-bold">→</span>
+                  <span><strong>Empresas de inserción:</strong> están diseñadas específicamente para dar oportunidades a personas en riesgo de exclusión. Ofrecen contrato, formación y acompañamiento.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 mt-1 font-bold">→</span>
+                  <span><strong>ONGs y fundaciones:</strong> organizaciones como Fundación Adecco, Cruz Roja Empleo, Cáritas o la Fundación Secretariado Gitano tienen programas específicos de empleo.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 mt-1 font-bold">→</span>
+                  <span><strong>Portales de empleo:</strong> InfoJobs, Indeed, LinkedIn. Crea un perfil profesional y activa alertas de empleo en tu zona y sector.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 mt-1 font-bold">→</span>
+                  <span><strong>Contactos personales:</strong> avisa a familiares, amigos y conocidos de que buscas empleo. Muchas ofertas se cubren por contactos directos.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">3. Prepara la entrevista</h3>
+              <ul className="text-gray-700 space-y-3">
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 mt-1 font-bold">→</span>
+                  <span><strong>Investiga la empresa:</strong> antes de la entrevista, infórmate sobre la empresa, su actividad y sus valores.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 mt-1 font-bold">→</span>
+                  <span><strong>Practica tus respuestas:</strong> prepara respuestas para las preguntas más habituales. Pide a alguien de confianza que haga una simulación contigo.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 mt-1 font-bold">→</span>
+                  <span><strong>Sé puntual y cuida tu imagen:</strong> llega 10 minutos antes. Viste de forma adecuada al puesto (no necesariamente traje, pero limpio y cuidado).</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 mt-1 font-bold">→</span>
+                  <span><strong>Muestra actitud positiva:</strong> los empleadores valoran la motivación, la responsabilidad y las ganas de aprender por encima de todo.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cómo explicar antecedentes */}
+      <section id="como-explicar" className="py-16 px-4 bg-amber-50" aria-labelledby="explicar-title">
+        <div className="max-w-4xl mx-auto">
+          <h2 id="explicar-title" className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Cómo explicar los antecedentes penales
+          </h2>
+
+          <div className="space-y-6">
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">¿Cuándo debo mencionarlo?</h3>
+              <div className="text-gray-700 space-y-4">
+                <p>
+                  <strong>No estás obligado/a a mencionarlo salvo que te lo pregunten directamente</strong> o
+                  el puesto lo requiera por ley (trabajo con menores, seguridad, función pública).
+                </p>
+                <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r">
+                  <p className="font-semibold text-green-800 mb-2">Recuerda:</p>
+                  <p>El certificado de antecedentes penales solo pueden solicitarlo para puestos donde la ley lo exija. En la mayoría de empleos del sector privado, <strong>no es un requisito legal</strong>.</p>
+                </div>
+                <p>
+                  Si la empresa te pregunta directamente, lo mejor es ser honesto/a. Mentir puede ser motivo de despido si se descubre después.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Cómo explicarlo de forma positiva</h3>
+              <div className="text-gray-700 space-y-4">
+                <p>Si decides hablarlo o te lo preguntan, sigue esta estructura:</p>
+                <ol className="space-y-4">
+                  <li className="flex items-start">
+                    <span className="bg-amber-500 text-white rounded-full w-7 h-7 flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0 mt-0.5">1</span>
+                    <span><strong>Reconoce brevemente el pasado:</strong> "Cometí un error hace X años y cumplí mi condena." No entres en detalles innecesarios.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="bg-amber-500 text-white rounded-full w-7 h-7 flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0 mt-0.5">2</span>
+                    <span><strong>Destaca lo que has aprendido:</strong> "Esa experiencia me enseñó la importancia de la responsabilidad y el esfuerzo."</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="bg-amber-500 text-white rounded-full w-7 h-7 flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0 mt-0.5">3</span>
+                    <span><strong>Habla de tu formación y cambio:</strong> "Durante ese tiempo me formé en [X] y estoy comprometido/a con mi nueva vida."</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="bg-amber-500 text-white rounded-full w-7 h-7 flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0 mt-0.5">4</span>
+                    <span><strong>Enfócate en el futuro:</strong> "Estoy motivado/a para trabajar duro y demostrar mi valía con hechos."</span>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Cancelación de antecedentes penales</h3>
+              <div className="text-gray-700 space-y-4">
+                <p>
+                  Los antecedentes penales <strong>se pueden cancelar</strong> una vez transcurrido un plazo desde que cumpliste la condena:
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-amber-500 mr-2 font-bold">•</span>
+                    <span><strong>6 meses</strong> para penas leves</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-amber-500 mr-2 font-bold">•</span>
+                    <span><strong>2 años</strong> para penas que no superen los 12 meses</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-amber-500 mr-2 font-bold">•</span>
+                    <span><strong>3 años</strong> para las demás penas menos graves</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-amber-500 mr-2 font-bold">•</span>
+                    <span><strong>5 años</strong> para penas graves</span>
+                  </li>
+                </ul>
+                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r">
+                  <p>
+                    Puedes solicitar la cancelación en el <strong>Registro Central de Penados</strong> del Ministerio de Justicia.
+                    El trámite es gratuito y se puede hacer online o presencialmente.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Empresas que contratan */}
+      <section id="empresas" className="py-16 px-4" aria-labelledby="empresas-title">
+        <div className="max-w-4xl mx-auto">
+          <h2 id="empresas-title" className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Empresas y organizaciones que dan oportunidades
+          </h2>
+
+          <div className="space-y-6">
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Empresas de inserción</h3>
+              <p className="text-gray-700 mb-4">
+                Son empresas cuyo fin es la integración laboral de personas en riesgo de exclusión.
+                Ofrecen un contrato de trabajo real con formación y acompañamiento.
+              </p>
+              <ul className="text-gray-700 space-y-3">
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>FAEDEI</strong> — Federación de Asociaciones Empresariales de Empresas de Inserción. Directorio de empresas por comunidad autónoma.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Koopera</strong> — Cooperativa de iniciativa social con presencia en País Vasco, Madrid y Andalucía. Sectores: textil, logística, servicios ambientales.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Recíclame</strong> — Empresa de inserción dedicada al reciclaje y gestión de residuos en varias comunidades.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>A Toda Vela</strong> — Empresa de inserción en hostelería y restauración con programas formativos.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Programas de empleo de ONGs</h3>
+              <ul className="text-gray-700 space-y-3">
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Fundación Adecco — Plan Integra:</strong> programa específico para personas con antecedentes penales. Incluye orientación, formación y acceso a ofertas de empleo.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Cruz Roja — Programa de Empleo:</strong> itinerarios personalizados de inserción laboral con formación y acompañamiento.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Cáritas — Programa de Empleo:</strong> orientación laboral, talleres de empleo y bolsa de trabajo propia en cada diócesis.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Fundación SURT:</strong> especializada en inserción laboral de mujeres en situación de vulnerabilidad.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Fundación Tomillo:</strong> formación y empleo para jóvenes y adultos en riesgo de exclusión en Madrid.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Sectores con más oportunidades</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="bg-amber-50 rounded-lg p-4">
+                  <h4 className="font-bold text-gray-900 mb-2">Construcción</h4>
+                  <p className="text-gray-700 text-sm">Alta demanda de peones, albañiles, electricistas y fontaneros. Muchas empresas valoran la experiencia práctica por encima del historial.</p>
+                </div>
+                <div className="bg-amber-50 rounded-lg p-4">
+                  <h4 className="font-bold text-gray-900 mb-2">Hostelería</h4>
+                  <p className="text-gray-700 text-sm">Cocina, sala, limpieza. Sector con alta rotación y muchas oportunidades de entrada sin experiencia previa.</p>
+                </div>
+                <div className="bg-amber-50 rounded-lg p-4">
+                  <h4 className="font-bold text-gray-900 mb-2">Logística y almacén</h4>
+                  <p className="text-gray-700 text-sm">Mozos de almacén, repartidores, preparadores de pedidos. El carnet de carretillero es una ventaja muy valorada.</p>
+                </div>
+                <div className="bg-amber-50 rounded-lg p-4">
+                  <h4 className="font-bold text-gray-900 mb-2">Limpieza y mantenimiento</h4>
+                  <p className="text-gray-700 text-sm">Limpieza industrial, mantenimiento de edificios, jardinería. Trabajo estable con horarios regulares.</p>
+                </div>
+                <div className="bg-amber-50 rounded-lg p-4">
+                  <h4 className="font-bold text-gray-900 mb-2">Agricultura</h4>
+                  <p className="text-gray-700 text-sm">Trabajo de temporada en recolección, invernaderos y explotaciones agrícolas. Especialmente en Andalucía, Murcia y Levante.</p>
+                </div>
+                <div className="bg-amber-50 rounded-lg p-4">
+                  <h4 className="font-bold text-gray-900 mb-2">Reciclaje y medio ambiente</h4>
+                  <p className="text-gray-700 text-sm">Empresas de inserción especializadas en gestión de residuos, reciclaje textil y servicios ambientales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Success stories */}
       <section className="py-16 px-4 bg-amber-50" aria-labelledby="exito-title">
         <div className="max-w-4xl mx-auto">
