@@ -411,7 +411,7 @@ export default function LaboralPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-amber-500 mr-2 font-bold">•</span>
-                    <span><strong>5 años</strong> para penas graves</span>
+                    <span><strong>10 años</strong> para penas graves</span>
                   </li>
                 </ul>
                 <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r">

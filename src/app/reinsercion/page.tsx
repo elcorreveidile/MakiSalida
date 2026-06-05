@@ -176,10 +176,10 @@ export default function ReinsercionPage() {
                 <li>• Recursos para compartir piso</li>
               </ul>
               <Link
-                href="/recursos"
+                href="/recursos/social"
                 className="inline-block w-full text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
               >
-                Explorar recursos
+                Ver redes de apoyo
               </Link>
             </article>
 
@@ -188,16 +188,16 @@ export default function ReinsercionPage() {
               <div className="text-5xl mb-4" role="img" aria-label="Cruz médica">🏥</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Salud</h3>
               <ul className="text-gray-700 space-y-2 mb-6">
-                <li>• Acceso a sanitaria pública</li>
+                <li>• Acceso a sanidad pública</li>
                 <li>• Programas de deshabituación</li>
                 <li>• Apoyo psicológico</li>
                 <li>• Hábitos saludables</li>
               </ul>
               <Link
-                href="/recursos"
+                href="/recursos/psicologico"
                 className="inline-block w-full text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
               >
-                Explorar recursos
+                Apoyo psicológico
               </Link>
             </article>
 
@@ -212,10 +212,10 @@ export default function ReinsercionPage() {
                 <li>• Becas y ayudas</li>
               </ul>
               <Link
-                href="/recursos"
+                href="/recursos/educativo"
                 className="inline-block w-full text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
               >
-                Explorar recursos
+                Formación y educación
               </Link>
             </article>
 
@@ -230,10 +230,10 @@ export default function ReinsercionPage() {
                 <li>• Asesoría especializada</li>
               </ul>
               <Link
-                href="/recursos"
+                href="/recursos/legal"
                 className="inline-block w-full text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
               >
-                Explorar recursos
+                Asesoría legal
               </Link>
             </article>
 
@@ -248,10 +248,10 @@ export default function ReinsercionPage() {
                 <li>• Redes de voluntariado</li>
               </ul>
               <Link
-                href="/recursos"
+                href="/recursos/social"
                 className="inline-block w-full text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
               >
-                Explorar recursos
+                Redes de apoyo
               </Link>
             </article>
           </div>

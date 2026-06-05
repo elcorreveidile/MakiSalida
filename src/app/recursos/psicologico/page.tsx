@@ -63,9 +63,17 @@ export default function PsicologicoPage() {
                 <li>✓ Cuidado personal y prevención del burnout</li>
                 <li>✓ Apoyo a otros miembros de la familia</li>
               </ul>
-              <button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
-                Descargar guía (PDF)
-              </button>
+
+              <div className="bg-amber-50 rounded-lg p-6 space-y-4">
+                <h4 className="font-bold text-gray-900">Consejos clave para familiares:</h4>
+                <div className="space-y-3 text-gray-700">
+                  <p><strong>1. Acepta tus emociones:</strong> Es normal sentir rabia, tristeza, vergüenza o culpa. No reprimas lo que sientes; reconocerlo es el primer paso para gestionarlo.</p>
+                  <p><strong>2. Establece rutinas:</strong> Mantener una estructura diaria te ayuda a sentir control sobre tu vida. Incluye tiempo para ti, para el trabajo y para el descanso.</p>
+                  <p><strong>3. Busca tu red de apoyo:</strong> No tienes que cargar con todo. Habla con familiares de confianza, amigos o profesionales. Compartir alivia.</p>
+                  <p><strong>4. Cuida tu salud física:</strong> El estrés crónico afecta al cuerpo. Duerme lo suficiente, aliméntate bien y haz ejercicio, aunque sea caminar 30 minutos al día.</p>
+                  <p><strong>5. Pon límites sanos:</strong> Ayudar a tu ser querido no significa sacrificar toda tu vida. Establece límites claros para proteger tu bienestar.</p>
+                </div>
+              </div>
             </article>
 
             <article className="bg-white rounded-lg shadow-md p-8">
@@ -76,36 +84,62 @@ export default function PsicologicoPage() {
                 Ejercicios y técnicas prácticas para reducir el estrés, la ansiedad y mejorar
                 el bienestar emocional tanto para internos como para familiares.
               </p>
-              <ul className="text-gray-700 space-y-3 mb-6">
-                <li>
-                  <strong>Respiración consciente:</strong> Ejercicios de respiración para
-                  calmar la mente y reducir la ansiedad
-                </li>
-                <li>
-                  <strong>Meditación guiada:</strong> Audios y ejercicios de meditación
-                  específicos para personas en situación de estrés
-                </li>
-                <li>
-                  <strong>Mindfulness:</strong> Técnicas de atención plena para gestionar
-                  pensamientos y emociones difíciles
-                </li>
-                <li>
-                  <strong>Relajación muscular:</strong> Ejercicios para liberar tensión
-                  física y mental
-                </li>
-              </ul>
-              <button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
-                Ver ejercicios guiados
-              </button>
+
+              <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div className="bg-blue-50 rounded-lg p-5">
+                  <h4 className="font-bold text-gray-900 mb-2">Respiración 4-7-8</h4>
+                  <ol className="text-gray-700 text-sm space-y-1">
+                    <li>1. Inspira por la nariz contando hasta 4</li>
+                    <li>2. Mantén el aire contando hasta 7</li>
+                    <li>3. Exhala por la boca contando hasta 8</li>
+                    <li>4. Repite 4 veces, 2-3 veces al día</li>
+                  </ol>
+                </div>
+                <div className="bg-green-50 rounded-lg p-5">
+                  <h4 className="font-bold text-gray-900 mb-2">Técnica 5-4-3-2-1 (ansiedad)</h4>
+                  <ol className="text-gray-700 text-sm space-y-1">
+                    <li>1. Nombra 5 cosas que ves</li>
+                    <li>2. Toca 4 cosas a tu alrededor</li>
+                    <li>3. Escucha 3 sonidos</li>
+                    <li>4. Identifica 2 olores</li>
+                    <li>5. Saborea 1 cosa</li>
+                  </ol>
+                </div>
+                <div className="bg-amber-50 rounded-lg p-5">
+                  <h4 className="font-bold text-gray-900 mb-2">Relajación muscular progresiva</h4>
+                  <ol className="text-gray-700 text-sm space-y-1">
+                    <li>1. Siéntate cómodamente y cierra los ojos</li>
+                    <li>2. Tensa los músculos de los pies 5 segundos</li>
+                    <li>3. Suelta y relaja 10 segundos</li>
+                    <li>4. Sube por piernas, abdomen, manos, hombros, cara</li>
+                  </ol>
+                </div>
+                <div className="bg-purple-50 rounded-lg p-5">
+                  <h4 className="font-bold text-gray-900 mb-2">Diario de gratitud</h4>
+                  <ol className="text-gray-700 text-sm space-y-1">
+                    <li>1. Cada noche, escribe 3 cosas buenas del día</li>
+                    <li>2. Pueden ser pequeñas: un café, una conversación</li>
+                    <li>3. Reléelo cuando te sientas mal</li>
+                    <li>4. Reduce la ansiedad en pocas semanas</li>
+                  </ol>
+                </div>
+              </div>
+
+              <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r">
+                <p className="text-gray-700 text-sm">
+                  <strong>Apps gratuitas recomendadas:</strong> Insight Timer (meditación guiada en español),
+                  Petit BamBou (mindfulness), Headspace (ejercicios de respiración).
+                </p>
+              </div>
             </article>
 
             <article className="bg-white rounded-lg shadow-md p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                👨‍⚕️ Directorio de psicólogos especializados
+                👨‍⚕️ Directorio de psicólogos y recursos profesionales
               </h3>
               <p className="text-gray-700 mb-4">
-                Listado de psicólogos, terapeutas y consejeros con experiencia en apoyo
-                a familias de internos y personas en proceso de reinserción.
+                Servicios de atención psicológica accesibles para familias de internos
+                y personas en proceso de reinserción.
               </p>
               <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r mb-6">
                 <p className="text-gray-700">
@@ -114,46 +148,63 @@ export default function PsicologicoPage() {
                   para afrontar esta situación.
                 </p>
               </div>
-              <ul className="text-gray-700 space-y-2 mb-6">
-                <li>• Psicólogos clínicos especializados en familias</li>
-                <li>• Terapeutas con experiencia en reinserción</li>
-                <li>• Servicios de terapia online y presencial</li>
-                <li>• Grupos de apoyo facilitados por profesionales</li>
-                <li>• Terapia accesible (tarifas reducidas y seguros)</li>
+              <ul className="text-gray-700 space-y-3 mb-6">
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Psicología sanitaria pública:</strong> Pide cita con tu médico de cabecera y solicita derivación a salud mental. Es gratuito a través de la Seguridad Social.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Colegio Oficial de Psicólogos:</strong> Cada comunidad autónoma tiene un colegio con directorio de profesionales. Busca en <a href="https://www.cop.es" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700 font-semibold">cop.es</a></span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Fundación ANAR:</strong> Apoyo psicológico gratuito para menores y familias. Teléfono: <strong>900 20 20 10</strong></span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Cruz Roja — Programa de Salud Mental:</strong> Atención psicológica para personas en vulnerabilidad. Contacta con tu sede local.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Terapia online accesible:</strong> Plataformas como Buencoco o Therapyside ofrecen tarifas reducidas para personas en situación de vulnerabilidad.</span>
+                </li>
               </ul>
-              <button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
-                Buscar profesionales
-              </button>
             </article>
 
             <article className="bg-white rounded-lg shadow-md p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                👥 Grupos de apoyo virtual
+                👥 Grupos de apoyo
               </h3>
               <p className="text-gray-700 mb-4">
                 Espacios seguros y confidenciales donde compartir experiencias, recibir apoyo
                 y conectar con otras personas que están pasando por situaciones similares.
               </p>
               <ul className="text-gray-700 space-y-3 mb-6">
-                <li>
-                  <strong>Grupos para familiares:</strong> Sesiones online para compartir
-                  experiencias y estrategias de afrontamiento
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Asociaciones de familiares:</strong> Muchas ciudades tienen asociaciones locales de familiares de internos que organizan reuniones periódicas. Pregunta en los servicios sociales de tu ayuntamiento.</span>
                 </li>
-                <li>
-                  <strong>Grupos para ex-internos:</strong> Espacio para compartir experiencias
-                  de reinserción y apoyarse mutuamente
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Cáritas:</strong> Ofrece grupos de apoyo y acompañamiento para familias en todas las diócesis de España.</span>
                 </li>
-                <li>
-                  <strong>Grupos temáticos:</strong> Grupos enfocados en temas específicos
-                  (ansiedad, manejo de emociones, relaciones familiares, etc.)
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Cruz Roja:</strong> Programa de acompañamiento social con voluntarios formados en escucha activa.</span>
                 </li>
-                <li>
-                  <strong>Foros 24/7:</strong> Comunidad online para conectar en cualquier momento
+                <li className="flex items-start">
+                  <span className="text-amber-500 mr-2 font-bold">•</span>
+                  <span><strong>Teléfono de la Esperanza:</strong> Además del teléfono 24h (<strong>717 003 717</strong>), organizan talleres presenciales de desarrollo personal y grupos de autoayuda en muchas ciudades.</span>
                 </li>
               </ul>
-              <button className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
-                Unirse a grupos de apoyo
-              </button>
+              <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r">
+                <p className="text-gray-700 text-sm">
+                  <strong>Consejo:</strong> Si no encuentras un grupo presencial en tu zona,
+                  busca "grupo de apoyo familias internos" + tu ciudad en redes sociales.
+                  Muchos funcionan por WhatsApp o Telegram.
+                </p>
+              </div>
             </article>
 
             <article className="bg-white rounded-lg shadow-md p-8">
@@ -165,12 +216,13 @@ export default function PsicologicoPage() {
                 emocional o urgencia psicológica.
               </p>
               <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r mb-6">
-                <p className="text-gray-900 font-bold mb-3">🚨 Si estás en crisis:</p>
+                <p className="text-gray-900 font-bold mb-3">Si estás en crisis:</p>
                 <ul className="text-gray-700 space-y-2">
-                  <li>• <strong>024</strong> - Teléfono de atención a la conducta suicida</li>
-                  <li>• <strong>112</strong> - Emergencias (si hay riesgo inmediato)</li>
-                  <li>• <strong>900 202 010</strong> - Teléfono de la Esperanza (ansiedad y depresión)</li>
-                  <li>• <strong>116 123</strong> - Samaritans (escucha emocional)</li>
+                  <li>• <strong>024</strong> — Teléfono de atención a la conducta suicida (24h, gratuito)</li>
+                  <li>• <strong>112</strong> — Emergencias (si hay riesgo inmediato)</li>
+                  <li>• <strong>717 003 717</strong> — Teléfono de la Esperanza (24h, gratuito)</li>
+                  <li>• <strong>900 20 20 10</strong> — ANAR, ayuda a menores y familias</li>
+                  <li>• <strong>016</strong> — Violencia de género (24h, gratuito, no deja rastro en factura)</li>
                 </ul>
               </div>
               <p className="text-gray-700">
@@ -181,18 +233,44 @@ export default function PsicologicoPage() {
 
             <article className="bg-white rounded-lg shadow-md p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                📚 Biblioteca de recursos de bienestar
+                📚 Recursos recomendados de bienestar
               </h3>
               <p className="text-gray-700 mb-4">
-                Colección de libros, podcasts, videos y otros recursos recomendados por
-                profesionales para mejorar el bienestar emocional.
+                Materiales recomendados por profesionales para mejorar el bienestar emocional.
               </p>
-              <ul className="text-gray-700 space-y-2">
-                <li>• Libros sobre resiliencia y superación</li>
-                <li>• Podcasts de psicología y bienestar</li>
-                <li>• Videos con ejercicios guiados</li>
-                <li>• Aplicaciones de meditación y sueño</li>
-              </ul>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="bg-amber-50 rounded-lg p-4">
+                  <h4 className="font-bold text-gray-900 mb-2">Libros</h4>
+                  <ul className="text-gray-700 text-sm space-y-1">
+                    <li>• "El hombre en busca de sentido" — Viktor Frankl</li>
+                    <li>• "Sentirse bien" — David Burns</li>
+                    <li>• "Cuando todo se derrumba" — Pema Chödrön</li>
+                  </ul>
+                </div>
+                <div className="bg-amber-50 rounded-lg p-4">
+                  <h4 className="font-bold text-gray-900 mb-2">Podcasts en español</h4>
+                  <ul className="text-gray-700 text-sm space-y-1">
+                    <li>• "Entiende tu mente" — psicología accesible</li>
+                    <li>• "Mente en equilibrio" — técnicas de bienestar</li>
+                    <li>• "A buenas horas" — salud mental cotidiana</li>
+                  </ul>
+                </div>
+                <div className="bg-amber-50 rounded-lg p-4">
+                  <h4 className="font-bold text-gray-900 mb-2">Apps gratuitas</h4>
+                  <ul className="text-gray-700 text-sm space-y-1">
+                    <li>• Insight Timer — meditación guiada</li>
+                    <li>• Petit BamBou — mindfulness</li>
+                    <li>• Woebot — apoyo emocional con IA</li>
+                  </ul>
+                </div>
+                <div className="bg-amber-50 rounded-lg p-4">
+                  <h4 className="font-bold text-gray-900 mb-2">Webs de referencia</h4>
+                  <ul className="text-gray-700 text-sm space-y-1">
+                    <li>• <a href="https://www.cop.es" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700">cop.es</a> — Colegio de Psicólogos</li>
+                    <li>• <a href="https://www.consaludmental.org" target="_blank" rel="noopener noreferrer" className="text-amber-600 hover:text-amber-700">consaludmental.org</a> — Confederación Salud Mental</li>
+                  </ul>
+                </div>
+              </div>
             </article>
           </div>
         </div>
@@ -215,7 +293,7 @@ export default function PsicologicoPage() {
               Ver todos los recursos
             </Link>
             <Link
-              href="/ayudar"
+              href="/contacto"
               className="inline-block bg-amber-600 text-white hover:bg-amber-700 font-bold py-3 px-8 rounded-lg transition-colors text-lg border-2 border-white"
             >
               Contactar para apoyo
