@@ -160,16 +160,28 @@ export default function FamiliasPage() {
             ⚡ Acciones Rápidas
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
-            <button className="px-4 sm:px-6 py-3 sm:py-4 bg-white border-2 border-gray-300 hover:border-amber-500 text-gray-900 rounded-xl font-bold text-sm sm:text-base shadow-sm hover:shadow-md transition-all">
+            <button
+              onClick={() => setActiveTab('comunicaciones')}
+              className="px-4 sm:px-6 py-3 sm:py-4 bg-white border-2 border-gray-300 hover:border-amber-500 text-gray-900 rounded-xl font-bold text-sm sm:text-base shadow-sm hover:shadow-md transition-all"
+            >
               📞 Programar Llamada
             </button>
-            <button className="px-4 sm:px-6 py-3 sm:py-4 bg-white border-2 border-gray-300 hover:border-amber-500 text-gray-900 rounded-xl font-bold text-sm sm:text-base shadow-sm hover:shadow-md transition-all">
+            <button
+              onClick={() => setActiveTab('comunicaciones')}
+              className="px-4 sm:px-6 py-3 sm:py-4 bg-white border-2 border-gray-300 hover:border-amber-500 text-gray-900 rounded-xl font-bold text-sm sm:text-base shadow-sm hover:shadow-md transition-all"
+            >
               📅 Consultar Calendario
             </button>
-            <button className="px-4 sm:px-6 py-3 sm:py-4 bg-white border-2 border-gray-300 hover:border-amber-500 text-gray-900 rounded-xl font-bold text-sm sm:text-base shadow-sm hover:shadow-md transition-all">
+            <Link
+              href="/recursos/legal"
+              className="block px-4 sm:px-6 py-3 sm:py-4 bg-white border-2 border-gray-300 hover:border-amber-500 text-gray-900 rounded-xl font-bold text-sm sm:text-base shadow-sm hover:shadow-md transition-all text-center"
+            >
               📖 Ver Guía de Visitas
-            </button>
-            <button className="px-4 sm:px-6 py-3 sm:py-4 bg-white border-2 border-gray-300 hover:border-amber-500 text-gray-900 rounded-xl font-bold text-sm sm:text-base shadow-sm hover:shadow-md transition-all">
+            </Link>
+            <button
+              onClick={() => setActiveTab('comunidad')}
+              className="px-4 sm:px-6 py-3 sm:py-4 bg-white border-2 border-gray-300 hover:border-amber-500 text-gray-900 rounded-xl font-bold text-sm sm:text-base shadow-sm hover:shadow-md transition-all"
+            >
               💬 Buscar Apoyo
             </button>
           </div>

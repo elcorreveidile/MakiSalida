@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Permisos de Salida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .field {
+            border-bottom: 1px solid #333;
+            padding: 8px 0;
+            min-height: 20px;
+        }
+        .checkbox-section {
+            margin: 20px 0;
+        }
+        .checkbox-item {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .checkbox-item:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+        }
+        .signature-section {
+            margin-top: 40px;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+        .signature-box {
+            margin: 30px 0;
+        }
+        .signature-line {
+            border-bottom: 1px solid #333;
+            width: 300px;
+            margin-top: 60px;
+        }
+        .back-button {
+            display: inline-block;
+            background: #1a5490;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .back-button:hover {
+            background: #0d3d6b;
+        }
+        @media print {
+            body { margin: 0; padding: 20px; }
+            .back-button { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/recursos/legal" class="back-button">← Volver a MakiSalida</a>
+    <div class="header">
+        <h1>SOLICITUD DE PERMISOS DE SALIDA</h1>
+        <p>AL EQUIPO TÉCNICO / JUNTAS DE TRATAMIENTO</p>
+    </div>
+
+    <div class="form-group">
+        <label>Centro Penitenciario:</label>
+        <div class="field"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Fecha:</label>
+        <div class="field"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Datos del interno:</label>
+        <div class="field">Nombre: _________________________________________________</div>
+        <div class="field">N° Expediente: ___________________________________________</div>
+        <div class="field">DNI/NIE: ________________________________________________</div>
+        <div class="field">Módulo/pabellón: _________________________________________</div>
+    </div>
+
+    <h3>EXPONE</h3>
+    <p>Que el suscrito, interno/a en este centro penitenciario, desea solicitar la concesión de permisos de salida conforme a lo establecido en la Ley Orgánica 1/1979, de 26 de septiembre, General Penitenciaria, y el Reglamento Penitenciario aprobado por Real Decreto 190/1996, de 9 de febrero.</p>
+
+    <h3>SOLICITA</h3>
+    <p>Que se le conceda permiso de salida de las siguientes características:</p>
+
+    <div class="checkbox-section">
+        <h4>Tipo de permiso solicitado:</h4>
+        <div class="checkbox-item">Permiso ordinario (hasta 36 días por año de permanencia)</div>
+        <div class="checkbox-item">Permiso extraordinario (por razones humanitarias, familiares, etc.)</div>
+        <div class="checkbox-item">Permiso para finalización de condena (art. 100.2 RP)</div>
+        <div class="checkbox-item">Permiso para participación en actividades programadas de reinserción</div>
+    </div>
+
+    <div class="form-group">
+        <label>Fecha o periodo solicitado:</label>
+        <div class="field">Desde: _____/_____/______  Hasta: _____/_____/______</div>
+    </div>
+
+    <div class="form-group">
+        <label>Lugar de realización:</label>
+        <div class="field"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Motivos fundamentados:</label>
+        <div class="field" style="min-height: 100px;"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Persona/s de contacto durante el permiso:</label>
+        <div class="field">Nombre: _________________________________________________</div>
+        <div class="field">Parentesco: ______________________________________________</div>
+        <div class="field">Teléfono: ________________________________________________</div>
+        <div class="field">Dirección: ________________________________________________</div>
+    </div>
+
+    <div class="form-group">
+        <label>Compromisos:</div>
+        <p>El suscrito se compromete a:</p>
+        <ul>
+            <li>Cumplir estrictamente las condiciones y horarios del permiso</li>
+            <li>Mantener conducta adecuada durante el disfrute del permiso</li>
+            <li>Presentarse en el centro a la hora establecida</li>
+            <li>No cometer nuevos delitos durante el permiso</li>
+            <li>Comunicar inmediatamente cualquier incidencia</li>
+        </ul>
+    </div>
+
+    <div class="signature-section">
+        <p>En _________________, a _____ de _______________ de 20_____</p>
+
+        <div class="signature-box">
+            <p>Fdo.: _______________________</p>
+            <div class="signature-line"></div>
+            <p>Firma del solicitante</p>
+        </div>
+
+        <p><strong>RECIBIÓ:</strong> La solicitud el _____/_____/______ a las _____:_____ horas</p>
+        <div class="signature-box">
+            <p>Fdo.: _______________________</p>
+            <div class="signature-line"></div>
+            <p>Firma del funcionario</p>
+        </div>
+    </div>
+
+    <div style="margin-top: 40px; font-size: 11px; color: #666;">
+        <p><strong>NOTA:</strong> Esta solicitud debe presentarse al Equipo Técnico con una antelación mínima de 15 días. Adjuntar documentación relevante que justifique el permiso solicitado (certificados, invitaciones, documentación familiar, etc.).</p>
+    </div>
+</body>
+</html>

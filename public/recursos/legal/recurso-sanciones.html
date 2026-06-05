@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurso contra Sanción Disciplinaria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .field {
+            border-bottom: 1px solid #333;
+            padding: 8px 0;
+            min-height: 20px;
+        }
+        .checkbox-section {
+            margin: 20px 0;
+        }
+        .checkbox-item {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .checkbox-item:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+        }
+        .signature-section {
+            margin-top: 40px;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+        .signature-box {
+            margin: 30px 0;
+        }
+        .signature-line {
+            border-bottom: 1px solid #333;
+            width: 300px;
+            margin-top: 60px;
+        }
+        .info-box {
+            background: #fff3cd;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        .warning-box {
+            background: #f8d7da;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #dc3545;
+        }
+        .back-button {
+            display: inline-block;
+            background: #1a5490;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .back-button:hover {
+            background: #0d3d6b;
+        }
+        @media print {
+            body { margin: 0; padding: 20px; }
+            .back-button { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/recursos/legal" class="back-button">← Volver a MakiSalida</a>
+    <div class="header">
+        <h1>RECURSO CONTRA SANCIÓN DISCIPLINARIA</h1>
+        <p>AL DIRECTOR DEL CENTRO PENITENCIARIO</p>
+    </div>
+
+    <div class="form-group">
+        <label>Centro Penitenciario:</label>
+        <div class="field"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Fecha:</label>
+        <div class="field"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Datos del interno recurrente:</label>
+        <div class="field">Nombre completo: ______________________________________________</div>
+        <div class="field">N° Expediente: _______________________________________________</div>
+        <div class="field">DNI/NIE: _____________________________________________________</div>
+        <div class="field">Módulo/pabellón: _____________________________________________</div>
+    </div>
+
+    <div class="info-box">
+        <p><strong>DATOS DE LA SANCIÓN RECURRIDA:</strong></p>
+        <div class="field">N° de expediente sancionador: _________________________________</div>
+        <div class="field">Fecha de la sanción: _________________________________________</div>
+        <div class="field">Tipo de falta sancionada: _______________________________________</div>
+        <div class="field">Sanción impuesta: ____________________________________________</div>
+        <div class="field">Fecha de notificación: _________________________________________</div>
+    </div>
+
+    <h3>EXPONE</h3>
+
+    <div class="warning-box">
+        <p><strong>I.</strong> Que por resolución de fecha _____/_____/______, se me impuso la sanción de _________________________________________ por la supuesta comisión de una falta ___________________________________________________.</p>
+    </div>
+
+    <div class="form-group">
+        <label>Número de días de aislamiento/sanción:</label>
+        <div class="field"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Tipo de falta gravísima/muy grave/gravísima:</label>
+        <div class="checkbox-section">
+            <div class="checkbox-item">Art. 108 RP - Agresión física</div>
+            <div class="checkbox-item">Art. 108 RP - Insolencia grave hacia funcionarios</div>
+            <div class="checkbox-item">Art. 108 RP - Amenazas o coacciones</div>
+            <div class="checkbox-item">Art. 108 RP - Incitación a la rebelión</div>
+            <div class="checkbox-item">Art. 108 RP - Tenencia de objetos peligrosos</div>
+            <div class="checkbox-item">Art. 108 RP - Otros (especificar)</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Hechos probados (según el acuerdo sancionador):</label>
+        <div style="border: 1px solid #333; min-height: 100px; padding: 10px; margin: 10px 0;"></div>
+    </div>
+
+    <h3>MOTIVOS DEL RECURSO (ALEGACIONES)</h3>
+
+    <div class="checkbox-section">
+        <p><strong>Marque los motivos que alegue (puede marcar varios):</strong></p>
+        <div class="checkbox-item">Falta de proporcionalidad de la sanción</div>
+        <div class="checkbox-item">Inexistencia de los hechos sancionados</div>
+        <div class="checkbox-item">Error en la calificación de los hechos</div>
+        <div class="checkbox-item">Falta de prueba suficiente</div>
+        <div class="checkbox-item">Vulneración del derecho de defensa</div>
+        <div class="checkbox-item">Incumplimiento del procedimiento sancionador</div>
+        <div class="checkbox-item">Prescripción de la falta</div>
+        <div class="checkbox-item">Causa de justificación o error</div>
+        <div class="checkbox-item">Otras alegaciones (especificar abajo)</div>
+    </div>
+
+    <div class="form-group">
+        <label>Alegaciones detalladas:</label>
+        <div style="border: 1px solid #333; min-height: 200px; padding: 10px; margin: 10px 0;"></div>
+        <p style="font-size: 11px; color: #666;">(Explique en detalle todos los motivos por los que considera que la sanción es injusta, indebida o desproporcionada. Incluya pruebas, testigos, circunstancias atenuantes, etc.)</p>
+    </div>
+
+    <div class="form-group">
+        <label>Pruebas que se proponen:</label>
+        <div class="checkbox-section">
+            <div class="checkbox-item">Testigos: _________________________________</div>
+            <div class="checkbox-item">Documental (informes, certificados)</div>
+            <div class="checkbox-item">Grabaciones de vídeo</div>
+            <div class="checkbox-item">Pericial (médica, psicológica)</div>
+            <div class="checkbox-item">Otras (especificar)</div>
+        </div>
+    </div>
+
+    <h3>SOLICITA</h3>
+    <p>Que teniendo por presentado este recurso, se admita a trámite, se practiquen las pruebas propuestas, y se dicte resolución revocando o modificando la sanción impuesta por ser injusta, indebida, vulnerar derechos fundamentales o no ajustarse a Derecho, con declaración de los efectos correspondientes (anulación de antecedentes, reposición de situación, etc.).</p>
+
+    <div class="signature-section">
+        <p>En _________________, a _____ de _______________ de 20_____</p>
+
+        <div class="signature-box">
+            <p>Fdo.: _______________________</p>
+            <div class="signature-line"></div>
+            <p>Firma del recurrente</p>
+        </div>
+
+        <p><strong>REGISTRO:</strong> Fecha _____/_____/______ a las _____:_____</p>
+        <div class="field">N° Registro: _______________________</div>
+    </div>
+
+    <div style="margin-top: 40px; font-size: 11px; color: #666;">
+        <p><strong>PLAZO:</strong> El recurso debe presentarse en el plazo de 3 días hábiles desde la notificación de la sanción (art. 245 RP). El Director resolverá en el plazo de 7 días desde la recepción del recurso.</p>
+        <p><strong>RECURSO JERÁRQUICO:</strong> Si el Director desestima el recurso, se puede interponer recurso jerárquico ante el Director General de Instituciones Penitenciarias en el plazo de 15 días desde la notificación de la desestimación.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Traslado de Centro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .field {
+            border-bottom: 1px solid #333;
+            padding: 8px 0;
+            min-height: 20px;
+        }
+        .checkbox-section {
+            margin: 20px 0;
+        }
+        .checkbox-item {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .checkbox-item:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+        }
+        .signature-section {
+            margin-top: 40px;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+        .signature-box {
+            margin: 30px 0;
+        }
+        .signature-line {
+            border-bottom: 1px solid #333;
+            width: 300px;
+            margin-top: 60px;
+        }
+        .info-box {
+            background: #f0f0f0;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #666;
+        }
+        .back-button {
+            display: inline-block;
+            background: #1a5490;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .back-button:hover {
+            background: #0d3d6b;
+        }
+        @media print {
+            body { margin: 0; padding: 20px; }
+            .back-button { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/recursos/legal" class="back-button">← Volver a MakiSalida</a>
+    <div class="header">
+        <h1>SOLICITUD DE TRASLADO DE CENTRO PENITENCIARIO</h1>
+        <p>A LA DIRECCIÓN GENERAL DE INSTITUCIONES PENITENCIARIAS / CENTRO PENITENCIARIO</p>
+    </div>
+
+    <div class="form-group">
+        <label>Centro Penitenciario actual:</label>
+        <div class="field"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Fecha:</label>
+        <div class="field"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Datos del interno:</label>
+        <div class="field">Nombre completo: ______________________________________________</div>
+        <div class="field">N° Expediente: _______________________________________________</div>
+        <div class="field">DNI/NIE: _____________________________________________________</div>
+        <div class="field">Fecha de ingreso en centro actual: ____________________________</div>
+        <div class="field">Grado de clasificación: ________________________________________</div>
+        <div class="field">Situación penitenciaria: _______________________________________</div>
+    </div>
+
+    <h3>EXPONE</h3>
+
+    <div class="info-box">
+        <p>Que el suscrito, interno/a en el centro penitenciario indicado, solicita el traslado a otro centro penitenciario por las razones que se exponen a continuación, conforme a lo establecido en el artículo 94 del Reglamento Penitenciario (RD 190/1996).</p>
+    </div>
+
+    <h3>MOTIVOS DEL TRASLADO SOLICITADO</h3>
+
+    <div class="checkbox-section">
+        <div class="checkbox-item">Cercanía al domicilio familiar (reasentamiento territorial)</div>
+        <div class="checkbox-item">Presencia de familiares directos en otra provincia</div>
+        <div class="checkbox-item">Programas de tratamiento no disponibles en centro actual</div>
+        <div class="checkbox-item">Ofertas laborales o formativas en otro centro</div>
+        <div class="checkbox-item">Razones de seguridad personal</div>
+        <div class="checkbox-item">Problemas de convivencia justificados</div>
+        <div class="checkbox-item">Razones familiares de especial relevancia (especificar)</div>
+        <div class="checkbox-item">Otras razones: ___________________________________</div>
+    </div>
+
+    <div class="form-group">
+        <label>Centro/s de destino solicitados (por orden de preferencia):</label>
+        <div class="field">1ª opción: _________________________________________________</div>
+        <div class="field">2ª opción: _________________________________________________</div>
+        <div class="field">3ª opción: _________________________________________________</div>
+    </div>
+
+    <div class="form-group">
+        <label>Explicación detallada de los motivos:</label>
+        <div style="border: 1px solid #333; min-height: 150px; padding: 10px; margin: 10px 0;"></div>
+        <p style="font-size: 11px; color: #666;">(Describa en detalle las razones por las que solicita el traslado, incluyendo circunstancias familiares, laborales, personales, etc.)</p>
+    </div>
+
+    <div class="form-group">
+        <label>Datos de contacto familiar:</label>
+        <div class="field">Nombre familiar de contacto: ________________________________</div>
+        <div class="field">Parentesco: ________________________________________________</div>
+        <div class="field">Teléfono: _________________________________________________</div>
+        <div class="field">Dirección: ________________________________________________</div>
+        <div class="field">Provincia: _________________________________________________</div>
+    </div>
+
+    <div class="form-group">
+        <label>Documentación que se aporta para acreditar el motivo:</label>
+        <div class="checkbox-section">
+            <div class="checkbox-item">Certificado de empadronamiento familiar</div>
+            <div class="checkbox-item">Informes de servicios sociales</div>
+            <div class="checkbox-item">Documentación acreditativa de enfermedad familiar</div>
+            <div class="checkbox-item">Justificantes de oferta laboral/formativa</div>
+            <div class="checkbox-item">Informe del Equipo Técnico favorable al traslado</div>
+            <div class="checkbox-item">Sin documentación adicional (se solicita al centro)</div>
+        </div>
+    </div>
+
+    <h3>SOLICITA</h3>
+    <p>Que tenga por presentada esta solicitud, se tramite conforme a la normativa vigente, y se resuelva favorablemente el traslado al centro solicitado por ser el más adecuado para mi proceso de reinserción y circunstancias personales.</p>
+
+    <div class="signature-section">
+        <p>En _________________, a _____ de _______________ de 20_____</p>
+
+        <div class="signature-box">
+            <p>Fdo.: _______________________</p>
+            <div class="signature-line"></div>
+            <p>Firma del solicitante</p>
+        </div>
+
+        <p><strong>REGISTRO DE ENTRADA DEL CENTRO:</strong></p>
+        <div class="field">Fecha: _____/_____/______  Hora: _____:_____</div>
+        <div class="field">Firma funcionario: _______________________</div>
+    </div>
+
+    <div style="margin-top: 40px; font-size: 11px; color: #666;">
+        <p><strong>INFORMACIÓN:</strong> El traslado puede solicitarse en cualquier momento. La Administración resolverá atendiendo a razones de tratamiento, seguridad, rehabilitación, y circunstancias personales/familiares. El plazo de resolución varía según las circunstancias de cada caso y disponibilidad de plazas.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Libertad Condicional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .field {
+            border-bottom: 1px solid #333;
+            padding: 8px 0;
+            min-height: 20px;
+        }
+        .checkbox-section {
+            margin: 20px 0;
+        }
+        .checkbox-item {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .checkbox-item:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+        }
+        .signature-section {
+            margin-top: 40px;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+        .signature-box {
+            margin: 30px 0;
+        }
+        .signature-line {
+            border-bottom: 1px solid #333;
+            width: 300px;
+            margin-top: 60px;
+        }
+        .info-box {
+            background: #d1ecf1;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #0c5460;
+        }
+        .back-button {
+            display: inline-block;
+            background: #1a5490;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .back-button:hover {
+            background: #0d3d6b;
+        }
+        @media print {
+            body { margin: 0; padding: 20px; }
+            .back-button { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/recursos/legal" class="back-button">← Volver a MakiSalida</a>
+    <div class="header">
+        <h1>SOLICITUD DE LIBERTAD CONDICIONAL</h1>
+        <p>AL JUEZ DE VIGILANCIA PENITENCIARIA / CENTRO PENITENCIARIO</p>
+    </div>
+
+    <div class="form-group">
+        <label>Centro Penitenciario:</label>
+        <div class="field"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Juzgado de Vigilancia Penitenciaria:</label>
+        <div class="field"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Fecha:</label>
+        <div class="field"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Datos del interno solicitante:</label>
+        <div class="field">Nombre completo: ______________________________________________</div>
+        <div class="field">N° Expediente: _______________________________________________</div>
+        <div class="field">DNI/NIE: _____________________________________________________</div>
+        <div class="field">Fecha de nacimiento: _______________________________________</div>
+        <div class="field">Módulo/pabellón: _____________________________________________</div>
+    </div>
+
+    <div class="info-box">
+        <p><strong>DATOS DE LA CONDENA:</strong></p>
+        <div class="field">Delito/s: _________________________________________________</div>
+        <div class="field">Fecha de la condena: _______________________________________</div>
+        <div class="field">Condena total impuesta: _____________________________________ años</div>
+        <div class="field">Fecha de inicio del cumplimiento: _____________________________</div>
+        <div class="field">Fecha teórica de libertad definitiva: _____________________________</div>
+        <div class="field">Clasificación actual: 2º / 3º grado</div>
+        <div class="field">Redención de penas realizada: ________________________________ días</div>
+        <div class="field">Tiempo efectivamente cumplido: ______________________________ años</div>
+    </div>
+
+    <h3>EXPONE</h3>
+
+    <div class="info-box">
+        <p>Que el suscrito, se encuentra privado de libertad en este centro penitenciario, y reúne los requisitos legales establecidos en el artículo 90, 91 y 92 del Código Penal y artículos 196-202 del Reglamento Penitenciario (RD 190/1996) para acceder a la libertad condicional.</p>
+    </div>
+
+    <h3>REQUISITOS CUMPLIDOS</h3>
+
+    <div class="checkbox-section">
+        <p><strong>Seleccione la modalidad que aplica (marcar la correspondiente):</strong></p>
+        <div class="checkbox-item"><strong>Art. 90 CP (Ordinaria):</strong> Han transcurrido 3/4 de la condena (o 2/3 para reincidentes)</div>
+        <div class="checkbox-item"><strong>Art. 91 CP (Enfermo grave):</strong> Padecimiento de enfermedad grave o incurable</div>
+        <div class="checkbox-item"><strong>Art. 91 CP (Edad avanzada):</strong> Mayores de 70 años o 60 cumplidos 3/4</div>
+        <div class="checkbox-item"><strong>Art. 92 CP (Extranjeros):</strong> Expulsión del territorio español</div>
+        <div class="checkbox-item"><strong>Art. 92.2 CP (Muygrave):</strong> 2/3 cumplidos + informe favorable + programa liberación</div>
+        <div class="checkbox-item"><strong>Art. 92.3 CP (Terrorismo):</strong> Requisitos específicos del art. 92.3</div>
+    </div>
+
+    <div class="form-group">
+        <label>Porcentaje de condena cumplida:</label>
+        <div class="field">______ % (calculado sobre el total de condenas acumuladas)</div>
+    </div>
+
+    <div class="form-group">
+        <label>Informe del Equipo Técnico:</label>
+        <div class="checkbox-section">
+            <div class="checkbox-item">Favorable a la libertad condicional</div>
+            <div class="checkbox-item">Pendiente de emitir (se solicita tramite)</div>
+            <div class="checkbox-item">Desfavorable (se recurre al JVP)</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Circunstancias personales favorables:</label>
+        <div class="checkbox-section">
+            <div class="checkbox-item">Clasificación en 3º grado de tratamiento</div>
+            <div class="checkbox-item">Participación en programas de tratamiento</div>
+            <div class="checkbox-item">Buena conducta (sin sanciones graves recientes)</div>
+            <div class="checkbox-item">Actividades laborales/formativas realizadas</div>
+            <div class="checkbox-item">Vinculación familiar</div>
+            <div class="checkbox-item">Oferta de empleo real</div>
+            <div class="checkbox-item">Hogar familiar disponible</div>
+            <div class="checkbox-item">Otras circunstancias (especificar)</div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Proyecto de vida en libertad:</label>
+        <div style="border: 1px solid #333; min-height: 150px; padding: 10px; margin: 10px 0;"></div>
+        <p style="font-size: 11px; color: #666;">(Describa dónde residirá, con quién, actividad laboral prevista, apoyo familiar, recursos disponibles)</p>
+    </div>
+
+    <div class="form-group">
+        <label>Datos de domicilio familiar:</label>
+        <div class="field">Dirección: ________________________________________________</div>
+        <div class="field">Localidad: _______________________________________________</div>
+        <div class="field">Teléfono: ________________________________________________</div>
+        <div class="field">Persona de contacto: ______________________________________</div>
+        <div class="field">Parentesco: _______________________________________________</div>
+    </div>
+
+    <div class="form-group">
+        <label>Oferta laboral (si dispone):</label>
+        <div class="field">Empresa: _________________________________________________</div>
+        <div class="field">Dirección: ________________________________________________</div>
+        <div class="field">Teléfono: ________________________________________________</div>
+        <div class="field">Persona de contacto: ______________________________________</div>
+    </div>
+
+    <div class="form-group">
+        <label>Documentación que se aporta:</label>
+        <div class="checkbox-section">
+            <div class="checkbox-item">Informe del Equipo Técnico favorable</div>
+            <div class="checkbox-item">Certificado médico (si aplica art. 91 CP)</div>
+            <div class="checkbox-item">Oferta de empleo</div>
+            <div class="checkbox-item">Documentación familiar (empadronamiento, etc.)</div>
+            <div class="checkbox-item">Informe de trabajo social</div>
+            <div class="checkbox-item">Certificado de participación en programas</div>
+            <div class="checkbox-item">Se solicita al centro la documentación pendiente</div>
+        </div>
+    </div>
+
+    <h3>SOLICITA</h3>
+    <p>Que tenga por presentada esta solicitud de libertad condicional, se eleve al Juez de Vigilancia Penitenciaria junto con informe del Equipo Técnico y documentación aportada, y se dicte resolución concediendo la libertad condicional por cumplirse los requisitos legales exigidos.</p>
+
+    <div class="signature-section">
+        <p>En _________________, a _____ de _______________ de 20_____</p>
+
+        <div class="signature-box">
+            <p>Fdo.: _______________________</p>
+            <div class="signature-line"></div>
+            <p>Firma del solicitante</p>
+        </div>
+
+        <p><strong>REGISTRO DEL CENTRO:</strong></p>
+        <div class="field">Fecha: _____/_____/______  Hora: _____:_____</div>
+        <div class="field">Firma funcionario: _______________________</div>
+    </div>
+
+    <div style="margin-top: 40px; font-size: 11px; color: #666;">
+        <p><strong>PROCEDIMIENTO:</strong> Presentada la solicitud, el Centro emite informe del Equipo Técnico y lo eleva al JVP en el plazo de 1 mes. El Juez resolverá en plazo de 15 días desde la recepción. Si no hay resolución en plazo, se puede interponer recurso de queja ante el JVP o Juez Decano.</p>
+        <p><strong>CONDICIONES:</strong> La libertad condicional conlleva obligaciones: presentarse periódicamente al JVP, notificar cambios de residencia, abstenerse de delitos, etc. El incumplimiento puede suponer la revocación.</p>
+    </div>
+</body>
+</html>
