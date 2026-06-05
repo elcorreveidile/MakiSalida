@@ -119,7 +119,18 @@ export function Footer() {
             © {currentYear} MakiLibre. Todos los derechos reservados.
           </p>
           <p className="mt-2 text-xs">
-            Diseñado para apoyar a familias de internos penitenciarios
+            Desarrollado por{' '}
+            <a
+              href="https://www.por2duros.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:text-amber-300 transition-colors"
+            >
+              Por 2 duros
+            </a>
+          </p>
+          <p className="mt-1 text-xs text-gray-600">
+            v0.1.0
           </p>
         </div>
       </div>
