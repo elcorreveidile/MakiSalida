@@ -66,28 +66,19 @@ export default function LegalPage() {
                   <li><strong>Derechos de visitas:</strong> Visitas de familiares (mínimo 2 al mes), visitas íntimas (cónyuge/pareja)</li>
                   <li><strong>Acciones culturales:</strong> Acceso a educación, trabajo, actividades culturales y deportivas</li>
                   <li><strong>Asistencia sanitaria:</strong> Acceso a atención médica y psicológica</li>
-                  <li><strong>Derechos religiosos:</strong> Liberdad de culto y asistencia religiosa</li>
+                  <li><strong>Derechos religiosos:</strong> Libertad de culto y asistencia religiosa</li>
                 </ul>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-4">
-                <a
-                  href="/api/pdf/guia-derechos"
-                  className="block text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors"
-                >
-                  📥 Descargar guía (PDF)
-                </a>
-                <a
-                  href="/recursos/legal/guia-derechos-penitenciarios.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-center bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-2 px-6 rounded-lg transition-colors"
-                >
-                  👁️ Ver versión online
-                </a>
+              <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r mb-4">
+                <p className="text-sm text-gray-700">
+                  <strong>📥 ¿Necesitas esta guía en PDF?</strong> Puedes copiar esta información
+                  o <Link href="/contacto" className="text-amber-600 hover:text-amber-700 font-semibold underline">contactarnos</Link> para
+                  recibir una versión imprimible.
+                </p>
               </div>
 
-              <div className="mt-6 p-4 bg-amber-50 rounded border border-amber-200">
+              <div className="p-4 bg-amber-50 rounded border border-amber-200">
                 <p className="text-sm text-gray-700">
                   <strong>Base legal:</strong> Artículos 25-28 de la Constitución Española, Ley Orgánica General Penitenciaria 1/1979, Reglamento Penitenciario RD 190/1996
                 </p>
@@ -100,46 +91,53 @@ export default function LegalPage() {
                 📝 Modelos de solicitudes y escritos
               </h3>
               <p className="text-gray-700 mb-6">
-                Plantillas oficiales para presentar solicitudes, quejas y recursos ante la
-                administración penitenciaria. Todos los modelos son adaptables a tu situación específica.
+                Información sobre los principales escritos que puedes presentar ante la
+                administración penitenciaria. Cada modelo es adaptable a tu situación específica.
               </p>
 
               <div className="grid md:grid-cols-2 gap-4 mb-6">
                 <div className="border border-gray-200 rounded-lg p-4">
                   <h4 className="font-semibold text-gray-900 mb-2">📄 Solicitud de permisos</h4>
-                  <p className="text-sm text-gray-600 mb-3">Modelo para solicitar permisos de salida ordinarios y extraordinarios</p>
-                  <a href="/api/pdf/solicitud-permisos" className="text-amber-600 hover:text-amber-700 text-sm font-semibold">Descargar modelo (PDF)</a>
+                  <p className="text-sm text-gray-600 mb-2">Modelo para solicitar permisos de salida ordinarios y extraordinarios</p>
+                  <p className="text-xs text-gray-500">Se presenta ante la Junta de Tratamiento del centro penitenciario</p>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-4">
                   <h4 className="font-semibold text-gray-900 mb-2">📄 Queja administrativa</h4>
-                  <p className="text-sm text-gray-600 mb-3">Presentar queja ante la dirección del centro por irregularidades</p>
-                  <a href="/api/pdf/queja-administrativa" className="text-amber-600 hover:text-amber-700 text-sm font-semibold">Descargar modelo (PDF)</a>
+                  <p className="text-sm text-gray-600 mb-2">Presentar queja ante la dirección del centro por irregularidades</p>
+                  <p className="text-xs text-gray-500">Dirigida al Director del centro o al Juez de Vigilancia Penitenciaria</p>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-4">
                   <h4 className="font-semibold text-gray-900 mb-2">📄 Solicitud de traslado</h4>
-                  <p className="text-sm text-gray-600 mb-3">Solicitar traslado a otro centro penitenciario por razones familiares</p>
-                  <a href="/api/pdf/solicitud-traslado" className="text-amber-600 hover:text-amber-700 text-sm font-semibold">Descargar modelo (PDF)</a>
+                  <p className="text-sm text-gray-600 mb-2">Solicitar traslado a otro centro penitenciario por razones familiares</p>
+                  <p className="text-xs text-gray-500">Se presenta ante la Secretaría General de Instituciones Penitenciarias</p>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-4">
                   <h4 className="font-semibold text-gray-900 mb-2">📄 Recurso contra sanciones</h4>
-                  <p className="text-sm text-gray-600 mb-3">Recurrir sanciones disciplinarias impuestas por el centro</p>
-                  <a href="/api/pdf/recurso-sanciones" className="text-amber-600 hover:text-amber-700 text-sm font-semibold">Descargar modelo (PDF)</a>
+                  <p className="text-sm text-gray-600 mb-2">Recurrir sanciones disciplinarias impuestas por el centro</p>
+                  <p className="text-xs text-gray-500">Recurso ante el Juez de Vigilancia Penitenciaria (plazo de 5 días)</p>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-4">
                   <h4 className="font-semibold text-gray-900 mb-2">📄 Libertad condicional</h4>
-                  <p className="text-sm text-gray-600 mb-3">Solicitud de libertad condicional ante el Juez de Vigilancia</p>
-                  <a href="/api/pdf/libertad-condicional" className="text-amber-600 hover:text-amber-700 text-sm font-semibold">Descargar modelo (PDF)</a>
+                  <p className="text-sm text-gray-600 mb-2">Solicitud de libertad condicional ante el Juez de Vigilancia</p>
+                  <p className="text-xs text-gray-500">Requiere cumplir 3/4 de la condena y clasificación en tercer grado</p>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-4">
                   <h4 className="font-semibold text-gray-900 mb-2">📄 Petición de 3º grado</h4>
-                  <p className="text-sm text-gray-600 mb-3">Solicitar clasificación en tercer grado de tratamiento</p>
-                  <a href="/api/pdf/peticion-3er-grado" className="text-amber-600 hover:text-amber-700 text-sm font-semibold">Descargar modelo (PDF)</a>
+                  <p className="text-sm text-gray-600 mb-2">Solicitar clasificación en tercer grado de tratamiento</p>
+                  <p className="text-xs text-gray-500">Se presenta ante la Junta de Tratamiento del centro</p>
                 </div>
+              </div>
+
+              <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r mb-4">
+                <p className="text-sm text-gray-700">
+                  <strong>📥 ¿Necesitas los modelos?</strong> <Link href="/contacto" className="text-amber-600 hover:text-amber-700 font-semibold underline">Escríbenos</Link> indicando
+                  qué modelo necesitas y te lo enviaremos por email.
+                </p>
               </div>
 
               <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded-r">
@@ -169,30 +167,51 @@ export default function LegalPage() {
                   que necesitan tus servicios. Contacta con nosotros para más información.
                 </p>
                 <Link
-                  href="/ayudar#contacto"
+                  href="/contacto"
                   className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors text-sm"
                 >
                   Solicitar información
                 </Link>
               </div>
 
+              <h4 className="font-bold text-gray-900 mb-4">Colegios de Abogados por ciudad</h4>
+              <p className="text-sm text-gray-600 mb-4">
+                Los Colegios de Abogados ofrecen servicios de orientación jurídica gratuita y gestionan el turno de oficio:
+              </p>
+
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="border border-gray-200 rounded-lg p-4">
                   <h4 className="font-bold text-gray-900 mb-2">Madrid</h4>
                   <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Colegio de Abogados de Madrid - Turno de oficio</li>
-                    <li>• Servicio de orientación jurídica gratuita</li>
-                    <li>• Tel: 91 533 75 00</li>
+                    <li>• Ilustre Colegio de Abogados de Madrid</li>
+                    <li>• Turno de oficio y orientación jurídica gratuita</li>
+                    <li>• Tel: 91 788 93 80</li>
                   </ul>
+                  <a
+                    href="https://web.icam.es/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-600 hover:text-amber-700 text-xs font-semibold mt-2 inline-block"
+                  >
+                    🔗 Web ICAM
+                  </a>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-4">
                   <h4 className="font-bold text-gray-900 mb-2">Barcelona</h4>
                   <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Ilustre Colegio d'Advocats de Barcelona</li>
+                    <li>• Il·lustre Col·legi de l&apos;Advocacia de Barcelona</li>
                     <li>• Servicio de atención al ciudadano</li>
-                    <li>• Tel: 93 317 20 00</li>
+                    <li>• Tel: 93 496 18 80</li>
                   </ul>
+                  <a
+                    href="https://www.icab.cat/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-600 hover:text-amber-700 text-xs font-semibold mt-2 inline-block"
+                  >
+                    🔗 Web ICAB
+                  </a>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-4">
@@ -200,8 +219,16 @@ export default function LegalPage() {
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li>• Ilustre Colegio de Abogados de Valencia</li>
                     <li>• Turno de oficio y guardia</li>
-                    <li>• Tel: 96 339 25 00</li>
+                    <li>• Tel: 96 394 12 90</li>
                   </ul>
+                  <a
+                    href="https://www.icav.es/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-600 hover:text-amber-700 text-xs font-semibold mt-2 inline-block"
+                  >
+                    🔗 Web ICAV
+                  </a>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-4">
@@ -209,15 +236,28 @@ export default function LegalPage() {
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li>• Ilustre Colegio de Abogados de Sevilla</li>
                     <li>• Servicio de orientación jurídica</li>
-                    <li>• Tel: 95 422 44 00</li>
+                    <li>• Tel: 95 450 37 37</li>
                   </ul>
+                  <a
+                    href="https://www.icas.es/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-600 hover:text-amber-700 text-xs font-semibold mt-2 inline-block"
+                  >
+                    🔗 Web ICAS
+                  </a>
                 </div>
               </div>
 
               <div className="mt-6 text-center">
-                <button className="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-2 px-6 rounded-lg transition-colors">
-                  Ver todos los colegios provinciales
-                </button>
+                <a
+                  href="https://www.abogacia.es/encuentra-tu-abogado/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-2 px-6 rounded-lg transition-colors"
+                >
+                  🔗 Buscar colegios en toda España (abogacia.es)
+                </a>
               </div>
             </article>
 
@@ -228,7 +268,7 @@ export default function LegalPage() {
               </h3>
               <p className="text-gray-700 mb-6">
                 Guía completa sobre los diferentes beneficios penitenciarios disponibles según
-                la Ley Orgánica General Penitenciaria.
+                la Ley Orgánica General Penitenciaria y el Código Penal.
               </p>
 
               <div className="space-y-6">
@@ -237,8 +277,8 @@ export default function LegalPage() {
                   <h4 className="font-bold text-gray-900 mb-3 text-lg">🔓 Permisos de salida</h4>
                   <ul className="space-y-3 text-gray-700">
                     <li>
-                      <strong>Permisos ordinarios:</strong> Hasta 36 días por año de permanencia
-                      en el centro (más 7 días adicionales por cada año a partir del tercero)
+                      <strong>Permisos ordinarios:</strong> Hasta 36 días al año para internos en
+                      segundo grado, y hasta 48 días para internos en tercer grado (art. 154 RP)
                     </li>
                     <li>
                       <strong>Permisos extraordinarios:</strong> Por enfermedad grave o fallecimiento
@@ -251,56 +291,64 @@ export default function LegalPage() {
                   </ul>
                   <div className="mt-4 bg-green-50 border-l-4 border-green-500 p-3 rounded-r">
                     <p className="text-sm text-gray-700">
-                      <strong>Requisitos básicos:</strong> Clasificación en 2º grado, buen comportamiento,
-                      no tener sanciones pendientes, y propuesta favorable del equipo técnico
+                      <strong>Requisitos básicos:</strong> Clasificación en 2º o 3er grado, haber cumplido
+                      1/4 de la condena, buena conducta, y propuesta favorable del equipo técnico (art. 47 LOGP)
                     </p>
                   </div>
                 </div>
 
                 {/* Libertad condicional */}
                 <div className="border border-gray-200 rounded-lg p-6">
-                  <h4 className="font-bold text-gray-900 mb-3 text-lg">⚖️ Libertad condicional</h4>
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg">⚖️ Libertad condicional (suspensión de la ejecución del resto de la pena)</h4>
+                  <p className="text-sm text-gray-600 mb-3">Regulada en los artículos 90-93 del Código Penal</p>
                   <ul className="space-y-3 text-gray-700">
                     <li>
-                      <strong>Cumplimiento mínimo:</strong> Haber cumplido:
+                      <strong>Requisitos generales (art. 90 CP):</strong>
                     </li>
                     <li className="ml-4 pl-4 border-l border-gray-300">
-                      • 3/4 de la condena para condenas hasta 5 años
+                      • Estar clasificado en <strong>tercer grado</strong> de tratamiento penitenciario
                     </li>
                     <li className="ml-4 pl-4 border-l border-gray-300">
-                      • 2/3 para condenas entre 5-10 años
+                      • Haber extinguido <strong>3/4 partes</strong> de la condena impuesta
                     </li>
                     <li className="ml-4 pl-4 border-l border-gray-300">
-                      • 1/2 para condenas superiores a 10 años
+                      • Buena conducta y pronóstico favorable de reinserción social
+                    </li>
+                    <li className="ml-4 pl-4 border-l border-gray-300">
+                      • Haber satisfecho la responsabilidad civil derivada del delito (según posibilidades)
                     </li>
                     <li>
-                      <strong>Clasificación mínima:</strong> Segundo grado de tratamiento
+                      <strong>Supuesto anticipado (art. 90.2 CP):</strong> A los <strong>2/3</strong> de la condena
+                      cuando existan circunstancias excepcionales (participación efectiva en programas de tratamiento)
                     </li>
                     <li>
-                      <strong>Condiciones:</strong> Buena conducta, actividad laboral/educativa,
-                      reintegración familiar y social favorable
+                      <strong>Supuesto especial (art. 90.3 CP):</strong> A la <strong>mitad</strong> de la condena
+                      para primarios condenados a pena no superior a 3 años
                     </li>
                   </ul>
-                </div>
-
-                {/* Redención */}
-                <div className="border border-gray-200 rounded-lg p-6">
-                  <h4 className="font-bold text-gray-900 mb-3 text-lg">⏰ Redención de pena</h4>
-                  <ul className="space-y-2 text-gray-700">
-                    <li><strong>Por trabajo:</strong> 1 día de redención por 2 días trabajados</li>
-                    <li><strong>Por actividades:</strong> Hasta 1 mes por año en actividades culturales, deportivas, formativas</li>
-                    <li><strong>Límite máximo:</strong> Redención máxima de 1/4 de la condena</li>
-                  </ul>
+                  <div className="mt-4 bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r">
+                    <p className="text-sm text-gray-700">
+                      <strong>Nota:</strong> La libertad condicional es ahora una forma de suspensión de la ejecución
+                      del resto de la pena (tras la reforma LO 1/2015). El Juez de Vigilancia Penitenciaria puede
+                      imponer condiciones y revocarla si se incumplen.
+                    </p>
+                  </div>
                 </div>
 
                 {/* Clasificación de grados */}
                 <div className="border border-gray-200 rounded-lg p-6">
                   <h4 className="font-bold text-gray-900 mb-3 text-lg">🎖️ Clasificación en grados</h4>
                   <ul className="space-y-2 text-gray-700">
-                    <li><strong>Primer grado:</strong> Régimen cerrado (internamiento inicial)</li>
-                    <li><strong>Segundo grado:</strong> Régimen ordinario (mayores permisos y actividades)</li>
-                    <li><strong>Tercer grado:</strong> Régimen abierto (permisos sin acompañamiento)</li>
+                    <li><strong>Primer grado:</strong> Régimen cerrado — aplicable a internos de peligrosidad extrema o inadaptación al régimen ordinario (art. 10 LOGP)</li>
+                    <li><strong>Segundo grado:</strong> Régimen ordinario — la clasificación más habitual, permite permisos de salida y actividades</li>
+                    <li><strong>Tercer grado:</strong> Régimen abierto — el interno reside en un Centro de Inserción Social (CIS), puede salir a trabajar y dormir en el centro</li>
                   </ul>
+                  <div className="mt-4 bg-green-50 border-l-4 border-green-500 p-3 rounded-r">
+                    <p className="text-sm text-gray-700">
+                      <strong>Revisión:</strong> La clasificación se revisa cada 6 meses como máximo (art. 105 RP).
+                      Puedes solicitar la revisión en cualquier momento.
+                    </p>
+                  </div>
                 </div>
               </div>
             </article>
@@ -318,75 +366,26 @@ export default function LegalPage() {
                 <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                   <h4 className="font-bold text-gray-900 mb-2">Secretaría General de Instituciones Penitenciarias</h4>
                   <p className="text-sm text-gray-600 mb-3">
-                    Organismo autónomo responsable de los centros penitenciarios y la política penitenciaria
-                  </p>
-                  <div className="flex gap-2">
-                    <a
-                      href="https://www.institucionespenitenciarias.es"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-amber-600 hover:text-amber-700 text-sm font-semibold"
-                    >
-                      🔗 Web oficial
-                    </a>
-                    <a
-                      href="https://www.institucionespenitenciarias.es/web/openData"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-amber-600 hover:text-amber-700 text-sm font-semibold"
-                    >
-                      📊 Datos abiertos
-                    </a>
-                  </div>
-                </div>
-
-                <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                  <h4 className="font-bold text-gray-900 mb-2">Jueces de Vigilancia Penitenciaria</h4>
-                  <p className="text-sm text-gray-600 mb-3">
-                    Órganos judiciales encargados del control de la actividad penitenciaria y los derechos de los internos
+                    Organismo responsable de la administración penitenciaria, centros penitenciarios y la política de reinserción
                   </p>
                   <a
-                    href="https://www.poderjudicial.es/cgpj/es/Colegios/Jueces-de-Vigilancia-Penitenciaria"
+                    href="https://www.institucionpenitenciaria.es/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-amber-600 hover:text-amber-700 text-sm font-semibold"
                   >
-                    🔗 Directorio de JVP
+                    🔗 Web oficial (institucionpenitenciaria.es)
                   </a>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                  <h4 className="font-bold text-gray-900 mb-2">Defensor del Pueblo</h4>
+                  <h4 className="font-bold text-gray-900 mb-2">Consejo General del Poder Judicial (CGPJ)</h4>
                   <p className="text-sm text-gray-600 mb-3">
-                    Defensa de los derechos fundamentales y libertades públicas, incluyendo derechos de los internos
-                  </p>
-                  <div className="flex gap-2">
-                    <a
-                      href="https://www.defensordelpueblo.es"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-amber-600 hover:text-amber-700 text-sm font-semibold"
-                    >
-                      🔗 Web oficial
-                    </a>
-                    <a
-                      href="https://www.defensordelpueblo.es/es/defensa/quejas"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-amber-600 hover:text-amber-700 text-sm font-semibold"
-                    >
-                      📝 Presentar queja
-                    </a>
-                  </div>
-                </div>
-
-                <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                  <h4 className="font-bold text-gray-900 mb-2">Consejo General del Poder Judicial</h4>
-                  <p className="text-sm text-gray-600 mb-3">
-                    Información sobre el sistema judicial y acceso a la justicia
+                    Información sobre el sistema judicial, directorio de juzgados y acceso a la justicia.
+                    Incluye los Juzgados de Vigilancia Penitenciaria.
                   </p>
                   <a
-                    href="https://www.poderjudicial.es"
+                    href="https://www.poderjudicial.es/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-amber-600 hover:text-amber-700 text-sm font-semibold"
@@ -396,48 +395,63 @@ export default function LegalPage() {
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                  <h4 className="font-bold text-gray-900 mb-2">Defensor del Pueblo</h4>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Defensa de los derechos fundamentales y libertades públicas. Puedes presentar
+                    quejas sobre condiciones penitenciarias o vulneración de derechos.
+                  </p>
+                  <a
+                    href="https://www.defensordelpueblo.es/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-600 hover:text-amber-700 text-sm font-semibold"
+                  >
+                    🔗 Web oficial (defensordelpueblo.es)
+                  </a>
+                </div>
+
+                <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                   <h4 className="font-bold text-gray-900 mb-2">Boletín Oficial del Estado (BOE)</h4>
                   <p className="text-sm text-gray-600 mb-3">
-                    Consulta leyes, reglamentos y normativa penitenciaria actualizada
+                    Consulta leyes, reglamentos y normativa penitenciaria en su versión consolidada actualizada
                   </p>
                   <a
-                    href="https://www.boe.es"
+                    href="https://www.boe.es/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-amber-600 hover:text-amber-700 text-sm font-semibold"
                   >
-                    🔗 Buscar normativa
+                    🔗 Buscar normativa (boe.es)
                   </a>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                  <h4 className="font-bold text-gray-900 mb-2">Colegios de Abogados</h4>
+                  <h4 className="font-bold text-gray-900 mb-2">Consejo General de la Abogacía Española</h4>
                   <p className="text-sm text-gray-600 mb-3">
-                    Servicios de orientación jurídica gratuita y turnos de oficio
+                    Servicios de orientación jurídica gratuita, turnos de oficio y búsqueda de abogados por especialidad
                   </p>
                   <a
-                    href="https://www.abogacia.es"
+                    href="https://www.abogacia.es/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-amber-600 hover:text-amber-700 text-sm font-semibold"
                   >
-                    🔗 Consejo General de la Abogacía
+                    🔗 Web oficial (abogacia.es)
                   </a>
                 </div>
 
                 <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                  <h4 className="font-bold text-gray-900 mb-2">Comisión Española de Ayuda a las Víctimas</h4>
+                  <h4 className="font-bold text-gray-900 mb-2">Servicio de Asistencia Jurídica Gratuita</h4>
                   <p className="text-sm text-gray-600 mb-3">
-                    Apoyo y recursos para víctimas de delitos
+                    Si no tienes recursos económicos, tienes derecho a un abogado de oficio gratuito.
+                    Solicítalo en cualquier Colegio de Abogados o en el propio centro penitenciario.
                   </p>
-                  <a
-                    href="https://www.fundacionvictimas.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-amber-600 hover:text-amber-700 text-sm font-semibold"
-                  >
-                    🔗 Fundación de Víctimas
-                  </a>
+                  <div className="bg-green-50 border-l-4 border-green-500 p-3 rounded-r">
+                    <p className="text-sm text-gray-700">
+                      <strong>Requisito:</strong> Ingresos inferiores a 2 veces el IPREM (indicador público de renta de efectos múltiples).
+                      Los internos sin recursos cumplen este requisito automáticamente.
+                    </p>
+                  </div>
                 </div>
               </div>
             </article>
@@ -454,19 +468,31 @@ export default function LegalPage() {
               <div className="space-y-3">
                 <div className="bg-gray-50 p-4 rounded">
                   <h4 className="font-semibold text-gray-900">Constitución Española (1978)</h4>
-                  <p className="text-sm text-gray-600">Artículos 15 (libertad ideológica), 17 (derechos sindicales), 18 (derecho al honor), 24 (derecho a la tutela judicial efectiva), 25 (derecho al trabajo)</p>
+                  <p className="text-sm text-gray-600">
+                    Art. 15 (derecho a la vida e integridad física), art. 17 (derecho a la libertad y seguridad),
+                    art. 18 (derecho a la intimidad y al honor), art. 24 (derecho a la tutela judicial efectiva),
+                    art. 25.2 (derechos de los condenados a pena de prisión)
+                  </p>
+                  <a
+                    href="https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-600 hover:text-amber-700 text-xs font-semibold mt-1 inline-block"
+                  >
+                    🔗 Ver texto consolidado (BOE)
+                  </a>
                 </div>
 
                 <div className="bg-gray-50 p-4 rounded">
-                  <h4 className="font-semibold text-gray-900">Ley Orgánica 1/1979 - General Penitenciaria</h4>
+                  <h4 className="font-semibold text-gray-900">Ley Orgánica 1/1979 - General Penitenciaria (LOGP)</h4>
                   <p className="text-sm text-gray-600">Ley que regula el régimen penitenciario, derechos y deberes de los internos</p>
                   <a
-                    href="https://www.boe.es/buscar/pdf.php?id=BOE-A-1979-27170"
+                    href="https://www.boe.es/buscar/act.php?id=BOE-A-1979-23708"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-amber-600 hover:text-amber-700 text-xs font-semibold"
+                    className="text-amber-600 hover:text-amber-700 text-xs font-semibold mt-1 inline-block"
                   >
-                    🔗 Ver texto completo
+                    🔗 Ver texto consolidado (BOE)
                   </a>
                 </div>
 
@@ -474,18 +500,42 @@ export default function LegalPage() {
                   <h4 className="font-semibold text-gray-900">Real Decreto 190/1996 - Reglamento Penitenciario</h4>
                   <p className="text-sm text-gray-600">Reglamento que desarrolla la LOGP 1/1979</p>
                   <a
-                    href="https://www.boe.es/buscar/pdf.php?id=BOE-A-1996-5540"
+                    href="https://www.boe.es/buscar/act.php?id=BOE-A-1996-3307"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-amber-600 hover:text-amber-700 text-xs font-semibold"
+                    className="text-amber-600 hover:text-amber-700 text-xs font-semibold mt-1 inline-block"
                   >
-                    🔗 Ver texto completo
+                    🔗 Ver texto consolidado (BOE)
                   </a>
                 </div>
 
                 <div className="bg-gray-50 p-4 rounded">
-                  <h4 className="font-semibold text-gray-900">Ley Orgánica 5/2000 - Responsabilidad Penal de Menores</h4>
-                  <p className="text-sm text-gray-600">Regula el responsabilidad penal de menores de 18 años</p>
+                  <h4 className="font-semibold text-gray-900">Código Penal (LO 10/1995)</h4>
+                  <p className="text-sm text-gray-600">
+                    Arts. 90-93 (libertad condicional), art. 136 (cancelación de antecedentes penales),
+                    arts. 80-87 (suspensión de la ejecución de penas)
+                  </p>
+                  <a
+                    href="https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-600 hover:text-amber-700 text-xs font-semibold mt-1 inline-block"
+                  >
+                    🔗 Ver texto consolidado (BOE)
+                  </a>
+                </div>
+
+                <div className="bg-gray-50 p-4 rounded">
+                  <h4 className="font-semibold text-gray-900">Ley Orgánica 5/2000 - Responsabilidad Penal del Menor</h4>
+                  <p className="text-sm text-gray-600">Regula la responsabilidad penal de menores de 18 años</p>
+                  <a
+                    href="https://www.boe.es/buscar/act.php?id=BOE-A-2000-641"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-600 hover:text-amber-700 text-xs font-semibold mt-1 inline-block"
+                  >
+                    🔗 Ver texto consolidado (BOE)
+                  </a>
                 </div>
               </div>
             </article>
@@ -528,7 +578,7 @@ export default function LegalPage() {
               Ver más recursos
             </Link>
             <Link
-              href="/ayudar#contacto"
+              href="/contacto"
               className="inline-block bg-amber-600 text-white hover:bg-amber-700 font-bold py-3 px-8 rounded-lg transition-colors text-lg border-2 border-white"
             >
               Contactar con nosotros
