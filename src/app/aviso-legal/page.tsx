@@ -55,7 +55,10 @@ export default function AvisoLegalPage() {
                   <strong>Domicilio:</strong> [Dirección completa pendiente de registro]
                 </p>
                 <p className="text-gray-700 mb-2">
-                  <strong>Email:</strong> contacto@makisalida.es
+                  <strong>Contacto:</strong>{' '}
+                  <Link href="/contacto" className="text-amber-600 hover:text-amber-700 font-semibold">
+                    Formulario de contacto
+                  </Link>
                 </p>
                 <p className="text-gray-700">
                   <strong>Teléfono:</strong> [Pendiente de registro]
@@ -150,7 +153,9 @@ export default function AvisoLegalPage() {
               </p>
               <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r">
                 <p className="text-gray-700 mb-2">
-                  <strong>Email:</strong> contacto@makisalida.es
+                  <Link href="/contacto" className="text-amber-600 hover:text-amber-700 font-semibold">
+                    Formulario de contacto
+                  </Link>
                 </p>
                 <p className="text-gray-700">
                   <strong>Horario de atención:</strong> Lunes a viernes, 9:00 - 18:00

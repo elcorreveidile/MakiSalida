@@ -118,11 +118,13 @@ export default function PrivacidadPage() {
 
               <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Ejercicio de derechos</h2>
               <p className="text-gray-700 mb-4">
-                Para ejercer tus derechos, puedes enviarnos un correo electrónico a:
+                Para ejercer tus derechos, puedes rellenar nuestro formulario de contacto:
               </p>
               <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r mb-6">
                 <p className="text-gray-700">
-                  <strong>Email:</strong> privacidad@makisalida.es
+                  <Link href="/contacto" className="text-amber-600 hover:text-amber-700 font-semibold">
+                    Ir al formulario de contacto
+                  </Link>
                 </p>
               </div>
 

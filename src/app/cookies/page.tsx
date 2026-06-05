@@ -200,9 +200,9 @@ export default function CookiesPage() {
                     </Link>
                   </li>
                   <li>Para contactarnos:
-                    <a href="mailto:privacidad@makisalida.es" className="text-amber-600 hover:text-amber-700 font-semibold ml-1">
-                      privacidad@makisalida.es
-                    </a>
+                    <Link href="/contacto" className="text-amber-600 hover:text-amber-700 font-semibold ml-1">
+                      Formulario de contacto
+                    </Link>
                   </li>
                 </ul>
               </div>
