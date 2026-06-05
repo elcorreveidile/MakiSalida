@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import { Header } from '@/components/Header';
 
 export default function LaboralPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
+      <Header />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-gray-200 py-3 px-4" aria-label="Breadcrumb">
         <div className="max-w-6xl mx-auto">
@@ -161,6 +163,41 @@ export default function LaboralPage() {
               >
                 Ver lista de empresas
               </Link>
+            </article>
+
+            <article className="bg-white rounded-lg shadow-md p-8 border-2 border-amber-400 relative overflow-hidden">
+              <div className="absolute top-0 right-0 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                Destacado
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                🚗 MakiCar — Tu primera oportunidad laboral
+              </h3>
+              <p className="text-gray-700 mb-4">
+                MakiCar es una plataforma de movilidad compartida que ofrece oportunidades laborales
+                reales para personas en proceso de reinserción. Conduce, reparte o acompaña: tú eliges
+                cómo empezar tu nueva vida profesional.
+              </p>
+              <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r mb-6">
+                <p className="text-gray-700">
+                  <strong>Sin barreras de entrada:</strong> MakiCar está diseñado para que
+                  cualquier persona con ganas de trabajar pueda empezar. Formación incluida,
+                  horarios flexibles y acompañamiento durante tus primeros meses.
+                </p>
+              </div>
+              <ul className="text-gray-700 space-y-2 mb-6">
+                <li>• Trabajo flexible desde el primer día</li>
+                <li>• Formación y acompañamiento incluidos</li>
+                <li>• Comunidad de apoyo entre conductores</li>
+                <li>• Ingresos desde la primera semana</li>
+              </ul>
+              <a
+                href="https://makicar.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors text-lg"
+              >
+                Descubre MakiCar
+              </a>
             </article>
 
             <article className="bg-white rounded-lg shadow-md p-8">

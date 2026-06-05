@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import { Header } from '@/components/Header';
 
 export default function AyudarPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
+      <Header />
       {/* Hero Section */}
       <section className="bg-amber-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">

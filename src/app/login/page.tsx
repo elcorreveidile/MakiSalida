@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { createClient } from '@/utils/supabase/client';
 import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -35,16 +36,7 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex flex-col">
-      <header className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center">
-              <span className="text-xl">🚪</span>
-            </div>
-            <span className="text-2xl font-bold text-gray-900">MakiSalida</span>
-          </Link>
-        </div>
-      </header>
+      <Header showNav={false} />
 
       <main className="flex-1 flex items-center justify-center px-4 py-16">
         <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-8 w-full max-w-md">
@@ -71,7 +63,7 @@ export default function LoginPage() {
           ) : (
             <>
               <div className="text-center mb-8">
-                <h1 className="text-3xl font-bold text-gray-900 mb-2">Accede a MakiSalida</h1>
+                <h1 className="text-3xl font-bold text-gray-900 mb-2">Accede a MakiLibre</h1>
                 <p className="text-gray-600">Te enviaremos un enlace mágico a tu email</p>
               </div>
 

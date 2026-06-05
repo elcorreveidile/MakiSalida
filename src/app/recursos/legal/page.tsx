@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import { Header } from '@/components/Header';
 
 export default function LegalPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
+      <Header />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-gray-200 py-3 px-4" aria-label="Breadcrumb">
         <div className="max-w-6xl mx-auto">

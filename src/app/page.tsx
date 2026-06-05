@@ -2,41 +2,12 @@
 
 import Link from 'next/link';
 import { Footer } from '@/components/Footer';
-import { AuthNav } from '@/components/auth/AuthNav';
+import { Header } from '@/components/Header';
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-      {/* Header */}
-      <header className="bg-white border-b border-gray-200" role="banner">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center" aria-hidden="true">
-                <span className="text-3xl">🚪</span>
-              </div>
-              <div>
-                <h1 className="text-3xl font-bold text-gray-900">MakiSalida</h1>
-                <p className="text-base text-gray-600">Hacia la libertad, con apoyo</p>
-              </div>
-            </Link>
-            <div className="hidden md:flex items-center gap-8">
-              <nav className="flex space-x-8" aria-label="Navegación principal">
-                <Link href="/familias" className="text-lg text-gray-700 hover:text-amber-600 font-medium transition-colors">
-                  Familias
-                </Link>
-                <Link href="/reinsercion" className="text-lg text-gray-700 hover:text-amber-600 font-medium transition-colors">
-                  Reinserción
-                </Link>
-                <Link href="/recursos" className="text-lg text-gray-700 hover:text-amber-600 font-medium transition-colors">
-                  Recursos
-                </Link>
-              </nav>
-              <AuthNav />
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" role="main">
@@ -168,7 +139,7 @@ export default function HomePage() {
             ¿Listo para empezar un nuevo camino?
           </h2>
           <p className="text-xl mb-6 text-amber-50 leading-relaxed">
-            Únete a MakiSalida y descubre el apoyo que necesitas para la reinserción.
+            Únete a MakiLibre y descubre el apoyo que necesitas para la reinserción.
           </p>
           <Link
             href="/login"

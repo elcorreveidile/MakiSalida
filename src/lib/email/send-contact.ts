@@ -12,10 +12,10 @@ export async function sendContactEmail(data: ContactFormData) {
   const { name, email, subject, message } = data;
 
   await resend.emails.send({
-    from: process.env.EMAIL_FROM || 'MakiSalida <noreply@makisalida.com>',
+    from: process.env.EMAIL_FROM || 'MakiLibre <noreply@makilibre.com>',
     to: ADMIN_EMAILS,
     replyTo: email,
-    subject: `[MakiSalida Contacto] ${subject}`,
+    subject: `[MakiLibre Contacto] ${subject}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <div style="background: linear-gradient(135deg, #d97706, #f59e0b); padding: 20px; border-radius: 8px 8px 0 0;">

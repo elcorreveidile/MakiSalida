@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import { Header } from '@/components/Header';
 
 export default function PrivacidadPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
+      <Header />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-gray-200 py-3 px-4" aria-label="Breadcrumb">
         <div className="max-w-6xl mx-auto">
@@ -25,7 +27,7 @@ export default function PrivacidadPage() {
             Política de Privacidad
           </h1>
           <p className="text-xl text-amber-100">
-            Última actualización: Enero 2025
+            Última actualización: Junio 2026
           </p>
         </div>
       </section>
@@ -37,7 +39,7 @@ export default function PrivacidadPage() {
             <div className="prose prose-amber max-w-none">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Responsable del tratamiento</h2>
               <p className="text-gray-700 mb-6">
-                <strong>MakiSalida</strong> es responsable del tratamiento de los datos personales
+                <strong>MakiLibre</strong> es responsable del tratamiento de los datos personales
                 recopilados a través de este sitio web, de conformidad con el Reglamento (UE) 2016/679
                 (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales.
               </p>
@@ -116,11 +118,13 @@ export default function PrivacidadPage() {
 
               <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Ejercicio de derechos</h2>
               <p className="text-gray-700 mb-4">
-                Para ejercer tus derechos, puedes enviarnos un correo electrónico a:
+                Para ejercer tus derechos, puedes rellenar nuestro formulario de contacto:
               </p>
               <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r mb-6">
                 <p className="text-gray-700">
-                  <strong>Email:</strong> privacidad@makisalida.es
+                  <Link href="/contacto" className="text-amber-600 hover:text-amber-700 font-semibold">
+                    Ir al formulario de contacto
+                  </Link>
                 </p>
               </div>
 

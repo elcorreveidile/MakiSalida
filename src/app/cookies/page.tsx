@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import { Header } from '@/components/Header';
 
 export default function CookiesPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
+      <Header />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-gray-200 py-3 px-4" aria-label="Breadcrumb">
         <div className="max-w-6xl mx-auto">
@@ -25,7 +27,7 @@ export default function CookiesPage() {
             Política de Cookies
           </h1>
           <p className="text-xl text-amber-100">
-            Última actualización: Enero 2025
+            Última actualización: Junio 2026
           </p>
         </div>
       </section>
@@ -47,7 +49,7 @@ export default function CookiesPage() {
               <h3 className="text-xl font-semibold text-gray-800 mb-3">2.1. Cookies técnicas (necesarias)</h3>
               <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r mb-4">
                 <p className="text-gray-700 mb-2">
-                  <strong>Purpose:</strong> Son necesarias para el funcionamiento del sitio web
+                  <strong>Propósito:</strong> Son necesarias para el funcionamiento del sitio web
                 </p>
                 <p className="text-gray-700">
                   No requieren consentimiento y no pueden ser deshabilitadas.
@@ -198,9 +200,9 @@ export default function CookiesPage() {
                     </Link>
                   </li>
                   <li>Para contactarnos:
-                    <a href="mailto:privacidad@makisalida.es" className="text-amber-600 hover:text-amber-700 font-semibold ml-1">
-                      privacidad@makisalida.es
-                    </a>
+                    <Link href="/contacto" className="text-amber-600 hover:text-amber-700 font-semibold ml-1">
+                      Formulario de contacto
+                    </Link>
                   </li>
                 </ul>
               </div>

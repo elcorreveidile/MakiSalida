@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import { Header } from '@/components/Header';
 
 export default function AvisoLegalPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
+      <Header />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-gray-200 py-3 px-4" aria-label="Breadcrumb">
         <div className="max-w-6xl mx-auto">
@@ -25,7 +27,7 @@ export default function AvisoLegalPage() {
             Aviso Legal
           </h1>
           <p className="text-xl text-amber-100">
-            Última actualización: Enero 2025
+            Última actualización: Junio 2026
           </p>
         </div>
       </section>
@@ -37,7 +39,7 @@ export default function AvisoLegalPage() {
             <div className="prose prose-amber max-w-none">
               <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r mb-8">
                 <p className="text-gray-700">
-                  <strong>ATENCIÓN:</strong> MakiSalida es una plataforma informativa y de apoyo.
+                  <strong>ATENCIÓN:</strong> MakiLibre es una plataforma informativa y de apoyo.
                   No es un servicio oficial de Instituciones Penitenciarias ni sustituye el asesoramiento
                   legal profesional. Para cuestiones legales específicas, consulta con un abogado
                   especializado.
@@ -47,13 +49,16 @@ export default function AvisoLegalPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Titular del sitio web</h2>
               <div className="bg-gray-50 rounded-lg p-6 mb-6">
                 <p className="text-gray-700 mb-2">
-                  <strong>Nombre:</strong> MakiSalida
+                  <strong>Nombre:</strong> MakiLibre
                 </p>
                 <p className="text-gray-700 mb-2">
                   <strong>Domicilio:</strong> [Dirección completa pendiente de registro]
                 </p>
                 <p className="text-gray-700 mb-2">
-                  <strong>Email:</strong> contacto@makisalida.es
+                  <strong>Contacto:</strong>{' '}
+                  <Link href="/contacto" className="text-amber-600 hover:text-amber-700 font-semibold">
+                    Formulario de contacto
+                  </Link>
                 </p>
                 <p className="text-gray-700">
                   <strong>Teléfono:</strong> [Pendiente de registro]
@@ -62,7 +67,7 @@ export default function AvisoLegalPage() {
 
               <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Finalidad del sitio web</h2>
               <p className="text-gray-700 mb-4">
-                MakiSalida es una plataforma web cuyo objetivo es proporcionar recursos,
+                MakiLibre es una plataforma web cuyo objetivo es proporcionar recursos,
                 información y apoyo a familiares de internos penitenciarios. Las finalidades
                 específicas son:
               </p>
@@ -78,8 +83,8 @@ export default function AvisoLegalPage() {
               <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r mb-6">
                 <h3 className="font-bold text-gray-900 mb-3">LIMITACIÓN DE RESPONSABILIDAD</h3>
                 <ul className="text-gray-700 space-y-2">
-                  <li>• MakiSalida NO es un despacho de abogados</li>
-                  <li>• MakiSalida NO está afiliado a Instituciones Penitenciarias</li>
+                  <li>• MakiLibre NO es un despacho de abogados</li>
+                  <li>• MakiLibre NO está afiliado a Instituciones Penitenciarias</li>
                   <li>• Los documentos proporcionados son modelos orientativos</li>
                   <li>• La información es general y puede no aplicarse a casos específicos</li>
                   <li>• No ofrecemos asesoramiento legal personalizado</li>
@@ -90,7 +95,7 @@ export default function AvisoLegalPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Propiedad intelectual</h2>
               <p className="text-gray-700 mb-4">
                 Todos los contenidos de este sitio web (textos, imágenes, logos, diseños, software,
-                documentación, etc.) son propiedad de MakiSalida o de sus licenciantes y están
+                documentación, etc.) son propiedad de MakiLibre o de sus licenciantes y están
                 protegidos por las leyes de propiedad intelectual e industrial.
               </p>
               <div className="bg-gray-50 rounded-lg p-6 mb-6">
@@ -110,7 +115,7 @@ export default function AvisoLegalPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Enlaces a terceros</h2>
               <p className="text-gray-700 mb-4">
                 Este sitio web puede contener enlaces a sitios web de terceros (instituciones
-                penitenciarias, juzgados, asociaciones, etc.). MakiSalida no tiene control sobre
+                penitenciarias, juzgados, asociaciones, etc.). MakiLibre no tiene control sobre
                 estos sitios y no se responsabiliza de sus contenidos o políticas de privacidad.
               </p>
               <p className="text-gray-700 mb-6">
@@ -121,7 +126,7 @@ export default function AvisoLegalPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Protección de datos</h2>
               <p className="text-gray-700 mb-4">
                 El tratamiento de datos personales se realiza conforme a lo establecido en la
-                Política de Privacidad de MakiSalida, de conformidad con el RGPD y la normativa
+                Política de Privacidad de MakiLibre, de conformidad con el RGPD y la normativa
                 española vigente.
               </p>
               <p className="text-gray-700 mb-6">
@@ -148,7 +153,9 @@ export default function AvisoLegalPage() {
               </p>
               <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r">
                 <p className="text-gray-700 mb-2">
-                  <strong>Email:</strong> contacto@makisalida.es
+                  <Link href="/contacto" className="text-amber-600 hover:text-amber-700 font-semibold">
+                    Formulario de contacto
+                  </Link>
                 </p>
                 <p className="text-gray-700">
                   <strong>Horario de atención:</strong> Lunes a viernes, 9:00 - 18:00
@@ -157,7 +164,7 @@ export default function AvisoLegalPage() {
 
               <div className="mt-8 p-6 bg-gray-100 rounded-lg">
                 <p className="text-gray-700 text-sm">
-                  <strong>Fecha de entrada en vigor:</strong> Enero 2025
+                  <strong>Fecha de entrada en vigor:</strong> Junio 2026
                 </p>
                 <p className="text-gray-700 text-sm mt-2">
                   Este aviso legal puede ser modificado en cualquier momento. Los cambios

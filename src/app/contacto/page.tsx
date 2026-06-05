@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
 import { contactSchema } from '@/lib/validations/contact';
 
 export default function ContactPage() {
@@ -62,22 +63,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex flex-col">
-      <header className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center">
-                <span className="text-xl">🚪</span>
-              </div>
-              <span className="text-2xl font-bold text-gray-900">MakiSalida</span>
-            </Link>
-            <nav className="hidden md:flex space-x-6">
-              <Link href="/familias" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Familias</Link>
-              <Link href="/recursos" className="text-gray-700 hover:text-amber-600 font-medium transition-colors">Recursos</Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <main className="flex-1 max-w-4xl mx-auto px-4 py-16 w-full">
         <nav className="text-sm text-gray-500 mb-8">

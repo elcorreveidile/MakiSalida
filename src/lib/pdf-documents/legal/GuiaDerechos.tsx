@@ -8,7 +8,7 @@ import {
 } from '@react-pdf/renderer';
 import createStyles, { colors } from '../styles';
 
-// Crear estilos con branding MakiSalida
+// Crear estilos con branding MakiLibre
 const styles = createStyles();
 
 // Logo y branding visual
@@ -28,7 +28,7 @@ const LogoHeader = () => (
       </View>
       <View>
         <Text style={{ fontSize: 24, fontWeight: 'bold', color: colors.primary }}>
-          MakiSalida
+          MakiLibre
         </Text>
         <Text style={{ fontSize: 10, color: colors.textLight }}>
           Apoyo a familias de internos
@@ -418,7 +418,7 @@ export const GuiaDerechosPDF = () => (
           particularidades que requieren asesoramiento profesional.
         </Text>
         <View style={{ marginTop: 8 }}>
-          <Text style={styles.textBold}>MakiSalida</Text>
+          <Text style={styles.textBold}>MakiLibre</Text>
           <Text style={styles.textSmall}>Recursos para familias de internos penitenciarios</Text>
         </View>
       </View>

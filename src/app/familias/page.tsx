@@ -5,39 +5,14 @@ import Link from 'next/link';
 import { CommunicationScheduler } from '@/components/familias/CommunicationScheduler';
 import { VisitInfo } from '@/components/familias/VisitInfo';
 import { CommunityForum } from '@/components/familias/CommunityForum';
+import { Header } from '@/components/Header';
 
 export default function FamiliasPage() {
   const [activeTab, setActiveTab] = useState<'comunicaciones' | 'visitas' | 'comunidad'>('comunicaciones');
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-      {/* Header */}
-      <header className="bg-white border-b border-gray-300 sticky top-0 z-10 shadow-sm" role="banner">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center shadow-md">
-                <span className="text-2xl sm:text-3xl">🚪</span>
-              </div>
-              <div>
-                <h1 className="text-xl sm:text-2xl font-bold text-gray-900">MakiSalida</h1>
-                <p className="text-sm text-gray-600">Familias</p>
-              </div>
-            </Link>
-            <nav className="hidden md:flex items-center space-x-6" aria-label="Navegación principal">
-              <Link href="/" className="text-base text-gray-700 hover:text-amber-600 font-medium transition-colors">
-                Inicio
-              </Link>
-              <Link href="/familias" className="text-base text-amber-600 font-bold">
-                Familias
-              </Link>
-              <Link href="/reinsercion" className="text-base text-gray-700 hover:text-amber-600 font-medium transition-colors">
-                Reinserción
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-amber-600 to-yellow-500 text-white shadow-lg">
@@ -194,7 +169,7 @@ export default function FamiliasPage() {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="flex items-center space-x-2">
               <span className="text-xl sm:text-2xl">🚪</span>
-              <span className="font-bold text-lg sm:text-xl text-gray-900">MakiSalida</span>
+              <span className="font-bold text-lg sm:text-xl text-gray-900">MakiLibre</span>
             </div>
             <p className="text-sm sm:text-base text-gray-700 text-center sm:text-left">
               Apoyo a familias de internos penitenciarios
