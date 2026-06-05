@@ -37,7 +37,7 @@ export default function RecursosPage() {
                 <li>• Información sobre beneficios penitenciarios</li>
               </ul>
               <Link
-                href="#"
+                href="/recursos/legal"
                 className="inline-block w-full text-center bg-amber-100 hover:bg-amber-200 text-amber-800 font-semibold py-3 px-6 rounded-lg transition-colors"
               >
                 Ver recursos legales
@@ -58,7 +58,7 @@ export default function RecursosPage() {
                 <li>• Empresas que contratan con antecedentes</li>
               </ul>
               <Link
-                href="#"
+                href="/recursos/laboral"
                 className="inline-block w-full text-center bg-amber-100 hover:bg-amber-200 text-amber-800 font-semibold py-3 px-6 rounded-lg transition-colors"
               >
                 Ver recursos laborales
@@ -79,7 +79,7 @@ export default function RecursosPage() {
                 <li>• Grupos de apoyo virtual</li>
               </ul>
               <Link
-                href="#"
+                href="/recursos/psicologico"
                 className="inline-block w-full text-center bg-amber-100 hover:bg-amber-200 text-amber-800 font-semibold py-3 px-6 rounded-lg transition-colors"
               >
                 Ver recursos psicológicos
@@ -100,7 +100,7 @@ export default function RecursosPage() {
                 <li>• Recursos y quejas</li>
               </ul>
               <Link
-                href="#"
+                href="/recursos/administrativo"
                 className="inline-block w-full text-center bg-amber-100 hover:bg-amber-200 text-amber-800 font-semibold py-3 px-6 rounded-lg transition-colors"
               >
                 Ver guías administrativas
@@ -121,7 +121,7 @@ export default function RecursosPage() {
                 <li>• Eventos y actividades presenciales</li>
               </ul>
               <Link
-                href="#"
+                href="/recursos/social"
                 className="inline-block w-full text-center bg-amber-100 hover:bg-amber-200 text-amber-800 font-semibold py-3 px-6 rounded-lg transition-colors"
               >
                 Ver redes de apoyo
@@ -142,7 +142,7 @@ export default function RecursosPage() {
                 <li>• Becas y ayudas</li>
               </ul>
               <Link
-                href="#"
+                href="/recursos/educativo"
                 className="inline-block w-full text-center bg-amber-100 hover:bg-amber-200 text-amber-800 font-semibold py-3 px-6 rounded-lg transition-colors"
               >
                 Ver recursos educativos
