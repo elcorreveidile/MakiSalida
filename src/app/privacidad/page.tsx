@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import { Header } from '@/components/Header';
 
 export default function PrivacidadPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
+      <Header />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-gray-200 py-3 px-4" aria-label="Breadcrumb">
         <div className="max-w-6xl mx-auto">
@@ -37,7 +39,7 @@ export default function PrivacidadPage() {
             <div className="prose prose-amber max-w-none">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Responsable del tratamiento</h2>
               <p className="text-gray-700 mb-6">
-                <strong>MakiSalida</strong> es responsable del tratamiento de los datos personales
+                <strong>MakiLibre</strong> es responsable del tratamiento de los datos personales
                 recopilados a través de este sitio web, de conformidad con el Reglamento (UE) 2016/679
                 (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales.
               </p>

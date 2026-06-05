@@ -32,7 +32,7 @@ export default function TooManyRequestsPage() {
               <span className="font-semibold">¿Por qué pasa esto?</span>
             </p>
             <p className="mt-2 text-xs text-gray-600">
-              Para proteger el sistema y mantener MakiSalida funcionando para todos, limitamos el número de peticiones.
+              Para proteger el sistema y mantener MakiLibre funcionando para todos, limitamos el número de peticiones.
               Es una medida de seguridad, no es nada personal. ¡El Maki lo entendería!
             </p>
           </div>

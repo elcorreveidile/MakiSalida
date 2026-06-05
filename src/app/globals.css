@@ -25,7 +25,7 @@ html {
   filter: blur(0);
 }
 
-/* MakiSalida specific styles */
+/* MakiLibre specific styles */
 .maki-gradient {
   background: linear-gradient(135deg, #FFD700 0%, #8B4513 100%);
 }

@@ -25,7 +25,7 @@ const FormHeader = () => (
       </View>
       <View>
         <Text style={{ fontSize: 20, fontWeight: 'bold', color: colors.primary }}>
-          MakiSalida
+          MakiLibre
         </Text>
         <Text style={{ fontSize: 9, color: colors.textLight }}>
           Recursos para familias de internos
@@ -220,7 +220,7 @@ export const LibertadCondicionalPDF = () => (
       </View>
 
       <View style={styles.footer}>
-        <Text style={styles.textBold}>MakiSalida</Text>
+        <Text style={styles.textBold}>MakiLibre</Text>
         <Text style={styles.textSmall}>www.makisalida.es</Text>
       </View>
 

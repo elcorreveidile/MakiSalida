@@ -1,5 +1,5 @@
 {
-  "name": "makisalida",
+  "name": "makilibre",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -46,7 +46,7 @@
     "apoyo",
     "makinavaja"
   ],
-  "author": "MakiSalida Team",
+  "author": "MakiLibre Team",
   "license": "MIT",
   "devDependencies": {
     "@jest/types": "^30.4.1",

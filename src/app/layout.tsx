@@ -5,23 +5,23 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'MakiSalida - Apoyo a Internos y Familias',
+  title: 'MakiLibre - Apoyo a Internos y Familias',
   description: 'Plataforma integral para apoyo a internos penitenciarios y sus familias. Conexión, reinserción y nueva vida.',
   keywords: ['reinserción', 'penitenciario', 'familias', 'apoyo', 'derechos internos', 'recursos legales penitenciarios'],
-  authors: [{ name: 'MakiSalida Team' }],
-  creator: 'MakiSalida',
-  publisher: 'MakiSalida',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://makisalida.com'),
+  authors: [{ name: 'MakiLibre Team' }],
+  creator: 'MakiLibre',
+  publisher: 'MakiLibre',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://makilibre.com'),
   openGraph: {
     type: 'website',
     locale: 'es_ES',
-    siteName: 'MakiSalida',
-    title: 'MakiSalida - Apoyo a Internos y Familias',
+    siteName: 'MakiLibre',
+    title: 'MakiLibre - Apoyo a Internos y Familias',
     description: 'Plataforma integral para apoyo a internos penitenciarios y sus familias. Conexión, reinserción y nueva vida.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MakiSalida - Apoyo a Internos y Familias',
+    title: 'MakiLibre - Apoyo a Internos y Familias',
     description: 'Plataforma integral para apoyo a internos penitenciarios y sus familias.',
   },
   alternates: {

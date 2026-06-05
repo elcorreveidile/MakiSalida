@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import { Header } from '@/components/Header';
 
 export default function ReinsercionPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
+      <Header />
       {/* Hero Section */}
       <section className="bg-amber-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -148,11 +150,19 @@ export default function ReinsercionPage() {
                 <li>• Cómo abordar antecedentes</li>
               </ul>
               <Link
-                href="/recursos"
+                href="/recursos/laboral"
                 className="inline-block w-full text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
               >
                 Explorar recursos
               </Link>
+              <a
+                href="https://makicar.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block w-full text-center mt-3 border-2 border-amber-500 text-amber-600 hover:bg-amber-50 font-semibold py-2 px-6 rounded-lg transition-colors text-sm"
+              >
+                🚗 MakiCar — Empieza a trabajar ya
+              </a>
             </article>
 
             {/* Vivienda */}

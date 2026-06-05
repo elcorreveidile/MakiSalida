@@ -11,9 +11,9 @@ export function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center">
-                <span className="text-xl">🚪</span>
+                <span className="text-white font-bold text-sm">ML</span>
               </div>
-              <span className="font-bold text-xl">MakiSalida</span>
+              <span className="font-bold text-xl">MakiLibre</span>
             </div>
             <p className="text-gray-400 text-sm mb-4">
               Apoyo a familias de internos penitenciarios
@@ -116,7 +116,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="text-center text-gray-500 text-sm">
           <p>
-            © {currentYear} MakiSalida. Todos los derechos reservados.
+            © {currentYear} MakiLibre. Todos los derechos reservados.
           </p>
           <p className="mt-2 text-xs">
             Diseñado para apoyar a familias de internos penitenciarios

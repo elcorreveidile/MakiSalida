@@ -12,7 +12,7 @@ export default function Error({
 }) {
   useEffect(() => {
     // Log error to error reporting service
-    console.error('MakiSalida Error:', error);
+    console.error('MakiLibre Error:', error);
   }, [error]);
 
   return (

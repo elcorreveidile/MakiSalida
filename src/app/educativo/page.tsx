@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import { Header } from '@/components/Header';
 
 export default function EducativoPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
+      <Header />
       {/* Hero Section */}
       <section className="bg-amber-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -22,7 +24,7 @@ export default function EducativoPage() {
             ¿Qué es el módulo educativo?
           </h2>
           <p className="text-lg text-gray-700 mb-6">
-            El módulo educativo de MakiSalida está diseñado específicamente para funcionar en tablets
+            El módulo educativo de MakiLibre está diseñado específicamente para funcionar en tablets
             dentro de centros penitenciarios, donde el acceso a Internet puede estar limitado o restringido.
           </p>
           <p className="text-lg text-gray-700 mb-6">
@@ -190,7 +192,7 @@ export default function EducativoPage() {
               <ul className="text-gray-700 space-y-2">
                 <li>✓ Tablets Android o iPad (mínimo 2GB RAM)</li>
                 <li>✓ Conexión Wi-Fi del centro (para sincronización)</li>
-                <li>✓ Software MakiSalida Educativo instalado</li>
+                <li>✓ Software MakiLibre Educativo instalado</li>
                 <li>✓ Sistema de gestión de dispositivos (MDM)</li>
               </ul>
             </article>

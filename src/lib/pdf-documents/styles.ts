@@ -1,4 +1,4 @@
-// Estilos globales para todos los PDFs de MakiSalida
+// Estilos globales para todos los PDFs de MakiLibre
 // Colores de branding
 export const colors = {
   primary: '#d97706', // amber-600
