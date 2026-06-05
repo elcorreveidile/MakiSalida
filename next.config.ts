@@ -3,6 +3,11 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
   /* config options here */
 
+  // Fix Turbopack workspace root detection
+  turbopack: {
+    root: __dirname,
+  },
+
   // Security headers
   async headers() {
     return [
